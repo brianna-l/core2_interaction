@@ -1,7 +1,57 @@
+body{
+    margin-top: 8%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#home {
+    position: fixed;
+    margin-left: 19vh;
+    margin-top: -13vh;
+    display: flex;
+    flex-direction: row;
+}
+#home div {
+    padding-right: 2em;
+}
 h1 {
     font-size: 3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10%;
 }
-p {
-    font-size: 2em;
+h3 {
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 3em;
+    color: black;
+}
+h2 {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 4.5em;
+    color: black;
+}
+#box1 {
+    width: 40%;
+    margin-left: 10vw;
+}
+#box1 h3{
+    width: 40%;
+    float: left;
+}
+#box1 h2{
+    width: 50%;
+    float: left;
+}
+#box1 p{
+    width: 10%;
+    float: right;
+    line-height: 3em;
+}
+img{
+    width: 20%;
+    float: right;
+    margin-top: -60vh;
+    margin-right: 8vw;
 }

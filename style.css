@@ -1,57 +1,94 @@
+html {
+    width: 100%;
+}
 body{
-    margin-top: 8%;
+    margin-top: 15%;
 }
 a {
     text-decoration: none;
+    color: rgb(171, 171, 171);
+}
+a:hover {
     color: black;
 }
+
+
 #home {
     position: fixed;
-    margin-left: 19vh;
-    margin-top: -13vh;
+    margin-left: 11vw;
+    margin-top: -8vh;
     display: flex;
     flex-direction: row;
 }
 #home div {
-    padding-right: 2em;
+    padding-right: 2vw;
 }
+
+#title {
+    color: black;
+}
+
+#content {
+    width: 80%;
+    display: flex;
+    flex-wrap:nowrap;
+    margin-left: 10vw;
+}
+
 h1 {
-    font-size: 3em;
+    font-size: 3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 10%;
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 1vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 3em;
     color: black;
 }
 h2 {
-    font-size: 1em;
+    font-size: 1.5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 4.5em;
+    line-height: 2em;
     color: black;
 }
+p {
+    font-size: 1.2vw;
+}
+
+
 #box1 {
-    width: 40%;
-    margin-left: 10vw;
+    width: 80%;
 }
 #box1 h3{
-    width: 40%;
+    width: 45%;
     float: left;
 }
 #box1 h2{
-    width: 50%;
+    width: 30%;
     float: left;
 }
 #box1 p{
-    width: 10%;
+    width: 25%;
     float: right;
     line-height: 3em;
 }
+.row3{
+    color: black;
+}
+.row3:hover {
+    color: burlywood;
+}
+
+#image {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 10vw;
+    transition: 3s;
+}
 img{
-    width: 20%;
-    float: right;
-    margin-top: -60vh;
-    margin-right: 8vw;
+    width: 100%;
+}
+#image:hover {
+    margin-top: -7%;
 }

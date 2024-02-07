@@ -1,0 +1,28 @@
+html {
+    background-color: #f7bc5d;
+    color: red;}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.MainHeader {
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Part {
+    background-color: #ffffff4c;
+}
+
+.SubHeader {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Segment {
+    margin: 2em;
+}
+
+.Segment p {
+    padding-bottom: 2em;
+}

@@ -2,7 +2,7 @@ html {
     width: 100%;
 }
 body{
-    margin-top: 15%;
+    background-color: rgb(247, 246, 245);
 }
 a {
     text-decoration: none;
@@ -15,50 +15,60 @@ a:hover {
 
 #home {
     position: fixed;
-    margin-left: 11vw;
-    margin-top: -8vh;
     display: flex;
     flex-direction: row;
+    border: solid 0.5px black;
+    height: 2vh;
 }
 #home div {
-    padding-right: 2vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+#home a {
+    color: black;
+}
+#home a:hover {
+    color: burlywood;
 }
 
 #title {
     color: black;
+    text-align: right;
+    margin-top: 5%;
+    height: 10vh;
 }
 
 #content {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap:nowrap;
-    margin-left: 10vw;
 }
 
 h1 {
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 10%;
 }
 h3 {
-    font-size: 1vw;
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2.5em;
+    color: black;
+}
+h2 {
+    font-size: 2vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 3em;
     color: black;
 }
-h2 {
-    font-size: 1.5vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 2em;
-    color: black;
-}
 p {
-    font-size: 1.2vw;
+    font-size: 2vw;
 }
 
 
 #box1 {
-    width: 80%;
+    width: 90%;
+    margin: auto;
 }
 #box1 h3{
     width: 45%;
@@ -72,23 +82,11 @@ p {
     width: 25%;
     float: right;
     line-height: 3em;
+    text-align: left;
 }
 .row3{
     color: black;
 }
 .row3:hover {
     color: burlywood;
-}
-
-#image {
-    margin-left: 10%;
-    margin-top: 5%;
-    width: 10vw;
-    transition: 3s;
-}
-img{
-    width: 100%;
-}
-#image:hover {
-    margin-top: -7%;
 }

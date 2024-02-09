@@ -1,22 +1,65 @@
 html {
-    background-color: #f7bc5d;
-    color: red;}
+    background-color: rgb(255, 241, 202);
+    color: red;
+}
+
+body {
+    background-color: #fcd26e;
+    margin: 2vw;
+}
+
+.links {
+    margin-left: 1vw;
+    font-size: 2vw;
+}
 
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 2.5vw;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    width: 50%;
+    margin: auto;
+    font-family: 'Dokdo', system-ui;
+    text-align: center;
+    border: solid 1px rgb(255, 242, 224);
+}
+
+h2 {
+    color: black;
 }
 
 .MainHeader {
-    font-size: 3em;
+    font-size: 3.2vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.SubTitle {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 7vh;
 }
 
 .Part {
     background-color: #ffffff4c;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10vh;
 }
 
 .SubHeader {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 2vh;
+    padding-bottom: 1.5vh;
+    background-color: rgba(240, 255, 255, 0.151);
+    border: solid 1px red;
 }
 
 .Segment {
@@ -25,4 +68,23 @@ p {
 
 .Segment p {
     padding-bottom: 2em;
+    width: 80%;
+    margin: auto;
+    text-decoration-line: overline underline;
+    text-decoration-color: rgba(255, 0, 0, 0.183);
+    line-height: 9vh;
+}
+
+.sunny {
+    width: 20vw;
+    padding-bottom: 6vh;
+}
+
+.mac {
+    width: 20vw;
+    padding-bottom: 6vh;
+}
+
+.sound {
+    padding-bottom: 6vh;
 }

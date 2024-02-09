@@ -1,0 +1,167 @@
+html {
+    color: rgb(34, 134, 188);
+    background-color: #ffffff;
+}
+
+a {
+    color: rgb(112, 152, 225);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    max-width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#Blue {
+    height: 2vh;
+    background-color: #a9e1ff;
+}
+
+h1 {
+    font-family: 'Rubik Scribble', system-ui;
+    font-size: 4.4vw;
+}
+
+h2 {
+    font-family: 'Lexend', sans-serif;
+}
+
+
+.Header-title {
+    word-spacing: 2vw;
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+}
+.Nav-list {
+    display: flex;
+    line-height: 7vh;
+}
+.Nav-list li{
+    margin-bottom: 2vh;
+}
+.Nav-item {
+    border: solid 1px black;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+
+.Page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.Page-header {
+    display: flex;
+    width: 85%;
+    align-items:center;
+    margin: auto;
+}
+.Meta-title {
+    width: 30%;
+    margin-left: 3vw;
+}
+.Meta {
+    width: 70%;
+}
+
+.Post {
+    width: 85%;
+    padding-top: 2vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+}
+
+.Courses {
+    width: 50%;
+    text-align: center;
+}
+.Courses p {
+    width: 50%;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.Students{
+    width: 100%;
+    text-align: center;
+}
+.Stu-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 3vh;
+}
+.Stu-list div{
+    width: 20%;
+    border: solid 1px black;
+    text-align: center;
+    margin: 1.5vw;
+    line-height: 3vh;
+}
+
+
+
+/*Calender*/
+
+.Calendar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 10% auto;
+}
+.Calendar-weekBody {
+    width: 85%;
+    display: flex;
+    background-color: aliceblue;
+    padding: 5vw;
+}
+.Calendar h3 {
+    text-align: center;
+}
+
+.Calendar-class {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+#Calendar-classlab {
+    background-color: #ffffff;
+    padding-left: 2vw;
+}
+
+.Fieldset-header {
+    margin: 4vh 0 0;
+}
+.Fieldset-group {
+    margin: 5vh;
+}
+
+/*Footer*/
+.Fieldset{
+    width: 85%;
+    text-align: center;
+    margin:auto;
+    padding: 2vh;
+    border-color: #a9e1ff;
+}
+.Blank {
+    height: 6vh;
+    width: 100%;
+    background-color: white;
+}
+.Footer {
+    text-align: center;
+    margin: auto;
+    background-color: #a9e1ff;
+}

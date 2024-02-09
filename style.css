@@ -33,8 +33,20 @@ a:hover {
 #title {
     color: black;
     text-align: right;
-    margin-top: 5%;
+    margin-top: 0;
     height: 10vh;
+    animation: title 6s infinite;
+}
+@keyframes title {
+    0% {
+        margin-right: 0;
+    }
+    70% {
+        margin-right: 19%;
+    }
+    100% {
+        margin-right: 0;
+    }
 }
 
 #content {

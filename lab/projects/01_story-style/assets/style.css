@@ -8,10 +8,65 @@ body {
     margin: 2vw;
 }
 
-.links {
-    margin-left: 1vw;
-    font-size: 2vw;
+.Nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    position: fixed;
+    bottom: 0;
 }
+.Nav-list li {
+    text-align: center;
+    padding: 1vh;
+}
+.Nav a {
+    font-family: 'Dokdo', system-ui;
+
+    color: rgb(255, 78, 29);
+}
+.Nav-list img {
+    width: 20px;
+}
+
+.links {
+    top: 28%;
+    margin-left: 4vw;
+    font-size: 2vw;
+    position: fixed;
+}
+
+.Sun {
+    position: fixed;
+    right: 5%;
+    width: 10%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    animation: Sun 35s infinite, Act 20s reverse;
+}
+@keyframes Sun {
+    0% {
+        background-color: #ffebbd;
+    }
+    50%{
+        background-color: coral;
+    }
+    70%{
+        background-color: rgb(225, 42, 32);
+    }
+    100% {
+        background-color: #ffebbd;
+    }
+}
+@keyframes Act {
+    0% {
+        top: 10%
+    }
+    100% {
+        top: 80%;
+    }
+}
+
+/*body*/
 
 p {
     font-family: 'Pompiere', sans-serif;
@@ -21,6 +76,9 @@ p {
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+a:hover {
+    color: crimson;
 }
 
 h1 {
@@ -38,6 +96,7 @@ h2 {
 .MainHeader {
     font-size: 3.2vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5% 0 20%;
 }
 
 .SubTitle {
@@ -75,16 +134,11 @@ h2 {
     line-height: 9vh;
 }
 
-.sunny {
-    width: 20vw;
+.sunny, .mac, .sound, object {
+    width: 30vw;
     padding-bottom: 6vh;
 }
 
-.mac {
-    width: 20vw;
-    padding-bottom: 6vh;
-}
-
-.sound {
-    padding-bottom: 6vh;
+object {
+    aspect-ratio: 4/3;
 }

@@ -1,4 +1,106 @@
 html {
-    color: rgb(43, 86, 205);
+    color: #2b56cd;
     background-color: white;
+}
+
+body {
+    max-width: 100%;
+}
+
+/*Header*/
+
+.Header {
+    width: 100%;
+}
+
+.Header-title {
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 10vh;
+    line-height: 0vw;
+}
+
+/*Nav*/
+
+.Nav {
+    width: 85%;
+    margin: auto;
+}
+
+.Nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Nav-item {
+    width: 14%;
+    padding: 2vh;
+    margin: 2vh;
+    border: 1px solid rgb(211, 226, 247);
+    text-align: center;
+    font-size: 3vw;
+}
+.Nav-item:hover {
+    background-color: #d4ddf7;
+}
+
+.Nav-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.Nav-link:hover {
+    color: rgb(30, 100, 241);
+    font-weight: 800;
+}
+
+/*Page*/
+
+.Page {
+    width: 85%;
+    margin: auto;
+    border: solid 1px #2b56cd;
+}
+
+.Page-header, .Post {
+    margin: 0 auto 0;
+    width: 85%;
+}
+
+.Page-header { 
+    font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Meta {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.Meta-tag {
+    font-size: 0.7em;
+}
+
+.Post {
+    width: 85%;
+}
+
+.Post ol, ul{
+    color: aliceblue;
+    padding: 1vh;
+    background-color: #2b56cd;
+}
+
+.Post li{
+    margin: 1em;
+    padding: 1em;
+    background-color: #d4ddf728;
+}
+
+.Post img {
+    width: 85%;
+    margin: auto;
 }

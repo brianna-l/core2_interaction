@@ -7,16 +7,31 @@ body {
     max-width: 100%;
 }
 
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+/*Nav*/
+.Fieldset {
+    display: flex;
+    margin: 2em;
+}
+
+.Fieldset-header {
+    margin-right: 2em;
+}
+
 /*Header*/
 
 .Header {
-    width: 100%;
+    max-width: 100%;
 }
 
 .Header-title {
-    width: 85%;
+    width: 80%;
     margin: 10vh auto 0;
-    font-size: 10vw;
+    font-size: 5em;
     text-align: center;
 }
 
@@ -40,6 +55,7 @@ body {
     border: 1px solid rgb(211, 226, 247);
     text-align: center;
     font-size: 1em;
+    border-radius: 30%;
 }
 .Nav-item:hover {
     background-color: #d4ddf7;
@@ -106,4 +122,68 @@ body {
     margin: 3em;
     border: solid 4px #2b56cd;
     border-style: double;
+}
+
+/*Calendar*/
+
+.Calendar-weekHeader {
+    margin: 1em 3em;
+    font-size: 2em;
+}
+
+.Calendar-class {
+    margin: 1em 4em;
+}
+
+.Calendar-class[data-class="studio"] {
+    background-color: #d4ddf7;
+    border: 1px solid #2b56cd;
+}
+.Calendar-class[data-class="lab"] {
+    background-color: #f1f7ff;
+    border: 1px solid #88a6ff;
+}
+
+.Calendar-class[data-class="lab"] h3,[data-class="studio"] h3{
+    margin-left: 2em;
+}
+
+.Calendar-class div {
+    margin: 2em;
+}
+
+.Calendar-class li {
+    margin: 1em 3em;
+    padding: 1em;
+    border: solid 1px rgba(212, 217, 255, 0.232);
+    background-color: #d4ddf727;
+    font-size: 1.5em;
+}
+
+.Calendar-class li:hover {
+    background-color: #7691e8;
+}
+
+/*Post*/
+
+.PostList {
+    margin: 2em;
+    padding: 2em;
+}
+
+.PostList-item {
+    margin-left: 2em;
+    padding: 1em;
+}
+
+.PostList-item a:hover{
+    color: #001d42;
+    background-color: #d4ddf7;
+}
+
+/*Footer*/
+
+.Footer {
+    text-align: center;
+    margin: 2em;
 }

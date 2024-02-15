@@ -1,0 +1,171 @@
+html {
+    max-width: 100%;
+    background-color: black;
+}
+
+body {
+    max-width: 80%;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: rgb(32, 28, 26);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+hr {
+    height: 0.1px;
+    border: none;
+    background-color: #ccc;
+}
+
+header {
+    max-width: 100%;
+    text-align: center;
+}
+
+#shadow {
+    width: 100%;
+    height: 20em;
+    z-index: 1;
+    left: 0;
+    background: linear-gradient(to bottom, #0b0b0b, #1f1f1f00);
+    position: fixed;
+    top: 0;
+}
+
+#clock {
+    z-index: 4;
+    font-size: 1em;
+    position: fixed;
+    top: 1em;
+    left: 1.5em;
+    color: rgb(73, 73, 73);
+}
+
+nav {
+    z-index: 2;
+    color: white;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+    font-family: "forma-djr-banner", sans-serif;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a::after {
+    color: #ccc;
+    text-decoration: none;
+}
+
+@keyframes breath{
+    0% {
+        color: #939393;
+    }
+    50% {
+        color: #fbfbfb;
+    }
+    100% {
+        color: #939393;
+    }
+}
+
+#title {
+    font-size: 8em;
+    text-align: center;
+    transform: perspective(5em) rotateX(30deg);
+    display: inline-block;
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 2em;
+    word-wrap: break-word;
+    letter-spacing: 3px;
+    animation: breath 7s infinite;
+}
+
+#home {
+    position: fixed;
+    bottom: 0;
+    right: 4%;
+}
+#home a{
+    font-family: "apparat-light", sans-serif;
+    color: #757575;
+    font-style: italic;
+}
+
+.subtitle {
+    z-index: 3;
+    position: fixed;
+    top: 1em;
+    right: 5%;
+    font-size: 0.6em;
+    color: rgb(241, 241, 241);
+    font-family: "apparat-light", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#quote {
+    margin: 6em 3em;
+    color: #ccc;
+    font-size: 2em;
+    font-family: "apparat-light", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    transition: font-size 2s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    line-height: 2em;
+}
+
+#quote:hover {
+    font-size: 2.5em;
+    color: #fbfbfb;
+  }
+
+main {
+    z-index: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Part {
+    width: 90%;
+    background-color: rgba(24, 24, 24, 0.851);
+    border: solid 0.2px rgb(167, 167, 167);
+    color: rgb(173, 173, 173);
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+    margin: auto;
+    padding: 0.5em 1.5em;
+    transition: all 3s;
+    letter-spacing: 2px;
+}
+
+.Part:hover {
+    background-color: #cccccc2d;
+    filter: blur(10px);
+}
+
+
+@media only screen and (max-width:1024px){
+    #title {
+        font-size: 4em;
+    }
+    #quote {
+        font-size: 1em;
+    }
+    #quote:hover {
+        font-size: 1.1em;
+        color: #fbfbfb;
+      }
+}

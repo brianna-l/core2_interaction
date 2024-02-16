@@ -1,0 +1,77 @@
+html {
+    max-width: 100%;
+}
+body {
+    max-width: 100%;
+    background-color: rgb(16, 16, 16);
+    color: #ccc;
+    height: min-content;
+    margin-top: 6em;
+}
+
+/*nav*/
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+#home {
+    position: fixed;
+    right: 2em;
+    bottom: 0;
+    font-family: "apparat-light", sans-serif;
+    font-weight: 100;
+}
+
+/*body*/
+#title {
+    font-family: "forma-djr-banner", sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    padding: 2em;
+    border: solid 0.5px #ccc;
+    margin: 0.5em;
+    transition: all 3s;
+    filter: blur(3px);
+    opacity: 60%;
+}
+
+.block:hover {
+    filter: blur(0);
+    opacity: 1;
+}
+
+#blockone {
+    background-color: #cccccc3c;
+    width: 30%;
+    height: min-content;
+    font-size: 0.9em;
+}
+#blocktwo {
+    background-color: #cccccc56;
+    width: 20%;
+    line-height: 2em;
+    height: min-content;
+    font-size: 0.8em;
+}
+#blockthree {
+    background-color: #cccccc1d;
+    width: 70%;
+    height: min-content;
+    font-size: 1.1em;
+}
+#blockfour {
+    background-color: #cccccc2b;
+    width: 50%;
+    height: min-content;
+    line-height: 1.3em;
+    font-size: 1em;
+
+}

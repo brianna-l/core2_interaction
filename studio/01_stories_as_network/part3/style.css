@@ -1,54 +1,88 @@
 html {
     max-width: 100%;
-    background-color: black;
+    background-color: #2C2A2A;
 }
 
 body {
-    max-width: 80%;
+    max-width: 100%;
     margin: 3em auto;
     padding: 2em;
-    background-color: rgb(32, 28, 26);
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-hr {
-    height: 0.1px;
-    border: none;
-    background-color: #ccc;
+/*Image*/
+.back {
+    position: fixed;
+    z-index: -1;
+}
+img {
+    width: 100%;
 }
 
+#img1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#img2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#img3 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 40%;
+    animation: shine 4s infinite;
+}
+#img4 {
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    width: 50%;
+    height: 40%;
+    transform: rotate(30deg);
+    animation: shine 10s infinite;
+}
+#img5 {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 30%;
+    height: 30%;
+    transform: rotate(2600deg);
+    animation: shine 6s infinite;
+}
+
+@keyframes shine{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+/*Top*/
 header {
     max-width: 100%;
     text-align: center;
 }
 
-#shadow {
-    width: 100%;
-    height: 20em;
-    z-index: 1;
-    left: 0;
-    background: linear-gradient(to bottom, #0b0b0b, #1f1f1f00);
-    position: fixed;
-    top: 0;
-}
-
 #clock {
     z-index: 4;
-    font-size: 1em;
+    font-size: 0.8em;
     position: fixed;
-    top: 1em;
-    left: 1.5em;
+    top: 0.8em;
+    left: 3.5em;
     color: rgb(73, 73, 73);
-}
-
-nav {
-    z-index: 2;
-    color: white;
-    position: fixed;
-    top: 5%;
-    left: 5%;
-    text-align: center;
     font-family: "forma-djr-banner", sans-serif;
 }
 
@@ -74,36 +108,54 @@ a::after {
     }
 }
 
-#title {
-    font-size: 8em;
-    text-align: center;
-    transform: perspective(5em) rotateX(30deg);
-    display: inline-block;
-    font-family: "forma-djr-banner", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    line-height: 2em;
-    word-wrap: break-word;
-    letter-spacing: 3px;
-    animation: breath 7s infinite;
-}
-
 #home {
     position: fixed;
-    bottom: 0;
-    right: 4%;
+    top: 0.4em;
+    left: 0.8em;
 }
 #home a{
     font-family: "apparat-light", sans-serif;
     color: #757575;
     font-style: italic;
+    font-size: 0.8em;
 }
 
+/*Title*/
+#title {
+    text-align: center;
+    display: inline-block;
+    animation: breath 7s infinite;
+    margin-top: 1.7em;
+}
+#title h1 {
+    font-size: 7.5em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1em;
+    word-wrap: break-word;
+    display: inline;
+}
+#shadow {
+    background: linear-gradient(90deg, #ccc, #ffffff13);
+    background-clip: text;
+    color: transparent;
+    vertical-align:sub;
+}
+
+#bottom {
+    letter-spacing: 9px;
+    vertical-align: super;
+    padding-inline-start: 0.5em;
+}
+
+/*Sub*/
 .subtitle {
     z-index: 3;
     position: fixed;
-    top: 1em;
-    right: 5%;
+    top: 0;
+    right: 1em;
     font-size: 0.6em;
     color: rgb(241, 241, 241);
     font-family: "apparat-light", sans-serif;
@@ -113,59 +165,100 @@ a::after {
 
 #quote {
     margin: 6em 3em;
-    color: #ccc;
-    font-size: 2em;
+    color: #5e5e5e;
+    font-size: 1em;
     font-family: "apparat-light", sans-serif;
     font-weight: 100;
     font-style: normal;
-    transition: font-size 2s ease-in-out;
+    transition: color 2s ease-in-out;
     display: inline-block;
     text-align: center;
     line-height: 2em;
 }
 
 #quote:hover {
-    font-size: 2.5em;
     color: #fbfbfb;
   }
 
+
+/*body*/
 main {
     z-index: 0;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: inline-block;
 }
 
 .Part {
-    width: 90%;
-    background-color: rgba(24, 24, 24, 0.851);
-    border: solid 0.2px rgb(167, 167, 167);
+    width: 10%;
     color: rgb(173, 173, 173);
     font-family: "forma-djr-banner", sans-serif;
     font-weight: 100;
     font-size: 0.8em;
     margin: auto;
     padding: 0.5em 1.5em;
-    transition: all 3s;
+    transition: all 2s;
     letter-spacing: 2px;
+    filter: blur(3px);
 }
 
 .Part:hover {
-    background-color: #cccccc2d;
-    filter: blur(10px);
+    color: #f4f4f4;
+    filter: blur(0);
+}
+
+#PartOne {
+    position: absolute;
+    left: 20%;
+    top: 60%;
+}
+#PartTwo {
+    position: absolute;
+    left: 4%;
+    top: 63%;
+}
+#PartThree {
+    position: absolute;
+    right: 10%;
+    top: 63%;
+}
+#PartFour {
+    position: absolute;
+    right: 26%;
+    top: 69%;
+}
+#PartFive {
+    position: absolute;
+    left: 33%;
+    top: 71%;
+}
+#PartSix {
+    position: absolute;
+    right: 5%;
+    top: 75%;
+}
+#PartSeven {
+    position: absolute;
+    right: 35%;
+    top: 79%;
+}
+#PartEight {
+    position: absolute;
+    left: 13%;
+    top: 77%;
 }
 
 
 @media only screen and (max-width:1024px){
-    #title {
-        font-size: 4em;
+    #title h1{
+        font-size: 4.2em;
     }
-    #quote {
-        font-size: 1em;
+    #shadow {
+        background: linear-gradient(180deg, #ccc, #ffffff13);
+        background-clip: text;
+        color: transparent;
     }
-    #quote:hover {
-        font-size: 1.1em;
-        color: #fbfbfb;
-      }
+    #bottom {
+        padding-inline-start: 0.1em;
+        letter-spacing: 7.5px;
+    }
 }

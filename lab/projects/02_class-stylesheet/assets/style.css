@@ -183,9 +183,9 @@ p {
 /*Post*/
 
 .PostList {
-    width: 80%;
+    width: 85%;
     margin: 2em auto;
-    padding: 2em;
+    padding: 1.5em 0;
     list-style: none;
 }
 
@@ -194,7 +194,8 @@ p {
 }
 
 .PostList-item {
-    width: 20%;
+    width: max-content;
+    padding: 0 0.5em;
     text-align: center;
     border-radius: 50px;
     border: double 2px #1f75e6;
@@ -202,8 +203,9 @@ p {
 }
 
 .PostList-link {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #1f75e6;
+    word-break: break-all;
 }
 
 .PostList-item:hover{

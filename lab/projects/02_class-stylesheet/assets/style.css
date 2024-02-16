@@ -41,7 +41,6 @@ p {
     margin: 10vh auto 0;
     font-size: 4em;
     text-align: center;
-    word-break: break-all;
     word-wrap: break-word;
 }
 

@@ -210,17 +210,13 @@ p {
     border: double 2px #1f75e6;
     background-color: #6fa9fc;
 }
-.PostList-item p{
-    line-height: 1em;
-    color: #1f75e6;
-}
 .PostList-link {
     font-size: 0.8em;
-    color: #1f75e6;
+    line-height: 0.6em;
 }
 
 .PostList-item:hover{
-    background-color: #f9f9f9;
+    background-color: #2b56cd;
 }
 
 /*Footer*/

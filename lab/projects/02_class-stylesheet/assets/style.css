@@ -41,6 +41,8 @@ p {
     margin: 10vh auto 0;
     font-size: 4em;
     text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 /*Nav*/
@@ -105,7 +107,7 @@ p {
 }
 
 .Meta-tag {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .Post {
@@ -119,13 +121,14 @@ p {
     display: flex;
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .Post li{
     height: min-content;
     width: max-content;
     font-size: 1em;
-    margin: 1em auto;
+    margin: 1em 1em;
     padding: 1em;
     background-color: #d4ddf728;
     text-align: center;
@@ -195,11 +198,13 @@ p {
 
 .PostList-item {
     width: max-content;
-    padding: 0 0.5em;
+    padding: 0.5em 0.5em;
+    margin: 0 1em;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 10px;
     border: double 2px #1f75e6;
     background-color: #6fa9fc;
+    line-height: 0.8em;
 }
 
 .PostList-link {
@@ -217,4 +222,11 @@ p {
 .Footer {
     text-align: center;
     margin: 2em;
+}
+
+
+@media only screen and (max-width:1024px){
+    .Header-title {
+        font-size: 2.5em;
+    }
 }

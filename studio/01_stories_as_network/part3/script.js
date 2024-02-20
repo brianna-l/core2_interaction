@@ -1,34 +1,20 @@
-let startTime;
-    let elapsedTime = 0;
-    let timerInterval;
+//six
+const paragraph = document.getElementById('six1');
+  const brokenWords = document.querySelectorAll('.broken-word');
 
-    function startClock() {
-        startTime = Date.now() - elapsedTime;
-        timerInterval = setInterval(updateClock, 1000);
-    }
+  paragraph.addEventListener('mouseover', () => {
+    brokenWords.forEach(word => {
+      const randomX = Math.random() * 200 - 100;
+      const randomY = Math.random() * 200 - 100;
+      word.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    });
+  });
 
-    function updateClock() {
-        const currentTime = Date.now();
-        elapsedTime = currentTime - startTime;
-        displayTime(elapsedTime);
-    }
-
-    function displayTime(time) {
-        const seconds = Math.floor((time / 1000) % 60);
-        const minutes = Math.floor((time / (1000 * 60)) % 60);
-        const hours = Math.floor(time / (1000 * 60 * 60));
-
-        const formattedTime = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-        document.getElementById('clock').innerText = formattedTime;
-    }
-
-    function pad(num) {
-        return num < 10 ? `0${num}` : num;
-    }
-
-    window.onload = startClock;
+  paragraph.addEventListener('mouseout', () => {
+    brokenWords.forEach(word => {
+      word.style.transform = 'translate(0, 0)';
+    });
+  });
+//
 
 
-    //
-
-   

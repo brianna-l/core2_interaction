@@ -1,0 +1,64 @@
+.Main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.Group {
+    background-color: rgb(200, 218, 251);
+    border: 1px solid rgb(1, 156, 213);
+    padding: 10px;
+
+    /* grid */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* classmate */
+.Classmate {
+    background-color: rgb(198, 246, 242);
+    border: 1px solid rgb(74, 243, 255);
+    padding: 10px;
+    color: rgb(0, 50, 186);
+}
+
+/* groups */
+.GroupOne {
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.GroupTwo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.GroupThree {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.GroupFour {
+    grid-template-columns: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+.GroupFive {
+    grid-template-columns: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* brianna */
+#Brianna {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

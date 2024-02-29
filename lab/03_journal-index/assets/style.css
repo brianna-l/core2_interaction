@@ -1,0 +1,148 @@
+body {
+    max-width: 100%;
+    background-color: #eff0b8;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 1em;
+    letter-spacing: 1px;
+}
+nav {
+    position: fixed;
+    top: 1vh;
+    left: 1.3vw;
+    background-color: antiquewhite;
+    border: 1px solid #5dcae8;
+    padding: 0 3px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(10, 129, 134);
+}
+.Head {
+    margin: 0 0 5vh;
+    text-align: center;
+    border: 1px solid #5dcae8;
+    background-color: rgb(24, 97, 150);
+}
+h1 {
+    color: rgb(255, 208, 52);
+    font-size: 2.5em;
+}
+.Main {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 8vw;
+    background-color: rgb(243, 144, 74);
+    border: 1px solid rgb(70, 141, 182);
+    border-radius: 20px;
+}
+section {
+    width: 80vw;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    gap: 15px;
+    margin: 1vw 0;
+}
+.Group {
+    margin: 1vh 0;
+    width: 40vw;
+    height: 170px;
+    display: flex;
+    background-color: rgb(8, 98, 125);
+    border: 1px solid rgb(222, 240, 250);
+    color: rgb(255, 253, 202);
+    border-radius: 20px;
+}
+
+/* image */
+figure {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+figcaption{
+    margin-left: 15px;
+    font-size: 1.1em;
+}
+.Img {
+    width: 17vw;
+    background-position: center;
+    border: 1px dashed #eff0b8;
+}
+#Img1 {
+    background-image: url(/lab/03_journal-index/media/1.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img2 {
+    background-image: url(/lab/03_journal-index/media/2.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img3 {
+    background-image: url(/lab/03_journal-index/media/3.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img4 {
+    background-image: url(/lab/03_journal-index/media/4.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img5 {
+    background-image: url(/lab/03_journal-index/media/5.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img6 {
+    background-image: url(/lab/03_journal-index/media/6.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img7 {
+    background-image: url(/lab/03_journal-index/media/7.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img8 {
+    background-image: url(/lab/03_journal-index/media/8.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img9 {
+    background-image: url(/lab/03_journal-index/media/9.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img10 {
+    background-image: url(/lab/03_journal-index/media/10.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img11 {
+    background-image: url(/lab/03_journal-index/media/11.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img12 {
+    background-image: url(/lab/03_journal-index/media/12.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img13 {
+    background-image: url(/lab/03_journal-index/media/13.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img14 {
+    background-image: url(/lab/03_journal-index/media/14.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+#Img15 {
+    background-image: url(/lab/03_journal-index/media/15.webp);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}

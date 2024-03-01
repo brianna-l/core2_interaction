@@ -150,6 +150,5 @@ figcaption{
 @media screen and (max-width:430px){
     figcaption {
         font-size: 1em;
-        word-break: break-all;
     }
 }

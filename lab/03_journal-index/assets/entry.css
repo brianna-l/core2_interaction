@@ -1,0 +1,247 @@
+body {
+    background-color: #eff0b8;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 1em;
+    letter-spacing: 1px;
+}
+.Nav {
+    width: 97%;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background-color: rgb(36, 167, 172);
+    border: 1px solid #2e5188;
+    padding: 0;
+    margin: 0;
+}
+.Nav h1 {
+    margin: 0 auto;
+}
+a {
+    color: rgb(255, 208, 52);
+    text-decoration: none;
+    padding: 0 0.5em;
+    background-color: rgb(34, 90, 153);
+}
+#home {
+    color: rgb(255, 138, 84);
+}
+#next, #back {
+    color: rgb(99, 215, 219);
+}
+.Head {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #5dcae8;
+    background-color: rgb(24, 97, 150);
+}
+h1 {
+    color: rgb(255, 208, 52);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    width: 100%;
+    height: 55vh;
+    margin: 10vh 0 0;
+    background-color: rgb(241, 160, 90);
+    padding: 10px;
+}
+.IMG {
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    border: 2px solid #f6f6f6;
+    padding: 0;
+    margin: 0;
+}
+#IMG1 {
+    background-image: url(/lab/03_journal-index/media/1.webp);
+}
+#IMG2 {
+    background-image: url(/lab/03_journal-index/media/8.webp);
+}
+#IMG3 {
+    background-image: url(/lab/03_journal-index/media/3.webp);
+}
+#IMG4 {
+    background-image: url(/lab/03_journal-index/media/5.webp);
+}
+#IMG5 {
+    background-image: url(/lab/03_journal-index/media/6.webp);
+}
+#IMG6 {
+    background-image: url(/lab/03_journal-index/media/7.webp);
+}
+#IMG7 {
+    background-image: url(/lab/03_journal-index/media/11.webp);
+}
+#IMG8 {
+    background-image: url(/lab/03_journal-index/media/14.webp);
+}
+#IMG9 {
+    background-image: url(/lab/03_journal-index/media/2.webp);
+}
+#IMG10 {
+    background-image: url(/lab/03_journal-index/media/4.webp);
+}
+#IMG11 {
+    background-image: url(/lab/03_journal-index/media/9.webp);
+}
+#IMG12 {
+    background-image: url(/lab/03_journal-index/media/10.webp);
+}
+#IMG13 {
+    background-image: url(/lab/03_journal-index/media/12.webp);
+}
+#IMG14 {
+    background-image: url(/lab/03_journal-index/media/13.webp);
+}
+#IMG15 {
+    background-image: url(/lab/03_journal-index/media/15.webp);
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(241, 218, 113);
+    padding: 3px 0;
+    margin: 0;
+    word-spacing: 0.5em;
+    letter-spacing: 0.5px;
+}
+#sub {
+    background-color: rgb(106, 159, 106);
+    color: #f6f6f6;
+    padding: 10px 0;
+}
+#color {
+    padding: 0 10px;
+    background-color: #eff0b8;
+    display:inline-flex;
+}
+#silver {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#yellow {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(190, 164, 67);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#orange {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(248, 85, 16);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#brown {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(97, 64, 50);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#red {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(124, 13, 12);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#bisque {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(198, 177, 133);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#green {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(100, 146, 119);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#white {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#blue {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(137, 189, 206);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#darkblue {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(17, 92, 161);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+#darkgray {
+    width: 17px;
+    aspect-ratio: 1/1;
+    background-color: rgb(60, 62, 64);
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 430px){
+    main {
+        width: 100%;
+        height: 60vh;
+    }
+    .image {
+        margin: 1vh 0 0;
+        height: 60vh;
+    }
+    .text {
+        font-size: 1.5em;
+        word-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    #note {
+        padding: 0 40px;
+    }
+    #sub {
+        padding: 5px 40px;
+    }
+    .Nav {
+        left: 6px;
+    }
+    #IMG1, #IMG2, #IMG3, #IMG4, #IMG5, #IMG6, #IMG7, #IMG8, #IMG9, #IMG10, #IMG11, #IMG12, #IMG13, #IMG14, #IMG15 {
+        background-size: contain;
+        background-position: center center;
+    }
+}

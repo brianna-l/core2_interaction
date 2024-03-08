@@ -5,7 +5,25 @@
   means you'll need to use percentages when positioning and sizingelements within
   your frame.
 */
-
+a{
+  cursor: grab;
+}
+nav{
+  z-index: 999;
+  position: fixed;
+  width: 5vh;
+  aspect-ratio: 1/1;
+  background-color: rgb(50, 150, 209);
+  border: 3px solid beige;
+  top: 0;
+  left: 0;
+}
+.button{
+  background-color: rgb(233, 223, 93);
+  width: 2vh;
+  aspect-ratio: 1/1;
+  margin: 27% auto;
+}
 
 body {
   background-color: rgb(242, 238, 221);
@@ -30,6 +48,7 @@ body {
   top: 48%;
   left: 14%;
   z-index: 1;
+  border: solid 1px white;
 }
 
 .orange1{
@@ -104,6 +123,7 @@ body {
   border-radius: 10px;
   top: 25%;
   left: 42.5%;
+  filter: drop-shadow(15px 15px 4px #5791b9);
 }
 .keyboard{
   z-index: 0;
@@ -115,13 +135,13 @@ body {
   top: 70%;
   left: 37%;
   transform: perspective(5px) rotateX(1deg);
-  filter: drop-shadow(0px 7px rgb(95, 142, 183));
+  filter: drop-shadow(0px 7px rgb(44, 115, 176));
 }
 .screen{
   z-index: 0;
   width: 80%;
   height: 50%;
-  background-color: rgb(38, 43, 45);
+  background-color: rgb(6, 64, 119);
   background-image: repeating-linear-gradient(-214deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 13px);
   background-size: 9px;
   border-radius: 10px;

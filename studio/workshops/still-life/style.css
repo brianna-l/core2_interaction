@@ -69,12 +69,56 @@ body {
   aspect-ratio: 1/1;
   background-color: rgb(238, 197, 126);
   border-radius: 50%;
-  background-image: repeating-linear-gradient(-45deg, rgba(238, 72, 72, 0.42), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+  background-image: repeating-linear-gradient(-45deg, rgba(238, 72, 72, 0.567), rgba(255,255,255, 0.25) 2px, transparent 2px, transparent 6px);
   background-size: 8px 8px;
   border: 2px solid rgb(173, 186, 154);
   top: 11%;
   left: 60%;
   z-index: 3;
+  animation: fall 10s infinite;
+}
+@keyframes fall{
+  0%{
+    top: 11%;
+    left: 60%;
+    z-index: 3;
+  }
+  10%{
+    top: 11%;
+    left: 65%;
+    rotate: 30deg;
+  }
+  40%{
+    top: 55%;
+    left: 70%;
+    rotate: 120deg;
+    background-color: rgb(238, 197, 126);
+  }
+  60%{
+    top: 55%;
+    left: 57%;
+    rotate: 60deg;
+    z-index: 0;
+    background-color: rgb(234, 148, 105);
+  }
+  90%{
+    top: 13%;
+    left: 57%;
+    z-index: 0;
+    background-color: rgb(234, 148, 105);
+  }
+  95%{
+    top: 12%;
+    left: 58%;
+    z-index: 0;
+    background-color: rgb(234, 167, 105);
+  }
+  100%{
+    top: 11%;
+    left: 60%;
+    z-index: 3;
+    background-color: rgb(238, 197, 126);
+  }
 }
 
 .bottle{

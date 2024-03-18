@@ -1,27 +1,27 @@
-var scales = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6];
-var currentScaleIndex = 6;
+var widths = ['200px', '250px', '300px', '350px', '400px', '450px', '500px', '550px', '600px', '650px', '700px', '750px', '800px'];
+var currentWidthIndex = 4;
 
 // Zoom In Button
 document.getElementById('zoomInBtn').addEventListener('click', function () {
-    if (currentScaleIndex < scales.length - 1) {
-        currentScaleIndex++;
-        var scale = scales[currentScaleIndex];
-        applyScale(scale);
+    if (currentWidthIndex < widths.length - 1) {
+        currentWidthIndex++;
+        var width = widths[currentWidthIndex];
+        applyWidth(width);
     }
 });
 
 // Zoom Out Button
 document.getElementById('zoomOutBtn').addEventListener('click', function () {
-    if (currentScaleIndex > 0) {
-        currentScaleIndex--;
-        var scale = scales[currentScaleIndex];
-        applyScale(scale);
+    if (currentWidthIndex > 0) {
+        currentWidthIndex--;
+        var width = widths[currentWidthIndex];
+        applyWidth(width);
     }
 });
-function applyScale(scale) {
+function applyWidth(width) {
     var spaceElements = document.querySelectorAll('.Spot');
     spaceElements.forEach(function (element) {
-        element.style.transform = 'scale(' + scale + ')';
+        element.style.width = width;
     });
 }
 

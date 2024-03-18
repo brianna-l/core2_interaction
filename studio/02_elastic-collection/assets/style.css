@@ -1,0 +1,35 @@
+html {
+	font-family: sans-serif;
+}
+
+.space {
+	padding: 1rem;
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.Spot {
+	padding: 1rem;
+	background-color: rgb(246, 246, 246);
+	border-radius: 5px;
+	width: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.Spot img {
+	width: 100%;
+}
+
+img {
+	image-rendering: pixelated;
+}
+
+.Spot p {
+	margin-top: 1rem;
+	align-self: flex-end;
+}

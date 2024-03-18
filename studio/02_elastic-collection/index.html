@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav><a href="02_elastic-collection.html">back</a> <a href="/index.html">home</a></nav>
+    <!-- nav -->
+    <nav>
+    <a href="02_elastic-collection.html" id="title">elastic|collection</a>
+    <button id="zoomOutBtn">-</button>
+    <button id="zoomInBtn">+</button>
+    <a href="/index.html" id="home">home</a>
+    </nav>
+
+    <!-- content -->
     <div class="space"></div>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="modalDetails"></p>
+        </div>
+        <div class="modal-nav"></div>
+    </div>
+
+    <!-- Java -->
     <script src="assets/data.js"></script>
     <script src="assets/script.js"></script>
 </body>

@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 5% 0;
+}
+
+img {
+    width: 600px;
+}
+
+p {
+    font-size: 21px;
+}

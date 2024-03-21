@@ -1,5 +1,5 @@
-var widths = ['150px', '200px', '250px', '300px', '350px', '400px', '450px', '500px', '550px', '600px', '650px', '700px', '750px', '800px'];
-var currentWidthIndex = 3;
+var widths = ['200px', '250px', '300px', '350px', '400px', '450px', '500px', '550px', '600px', '650px', '700px', '750px', '800px'];
+var currentWidthIndex = 4;
 
 // Zoom In Button
 document.getElementById('zoomInBtn').addEventListener('click', function () {
@@ -32,18 +32,12 @@ var mainElement = document.querySelector('.space');
         function insertSpaceData(space) {
             var article = document.createElement('article');
             article.classList.add('Spot');
-
-            var anchor = document.createElement('a');
-            anchor.href = space['url'];
-
             var img = document.createElement('img');
             img.src = "./media/" + space['image'];
-            img.addEventListener('mouseover', function () {
-                displayDetails(space['title']);
+            img.addEventListener('click', function () {
+                displayDetails(space['time'], space['date'], space['location']);
             });
-
-            anchor.appendChild(img);
-            article.appendChild(anchor);
+            article.appendChild(img);
             mainElement.appendChild(article);
         }
 
@@ -51,16 +45,15 @@ var mainElement = document.querySelector('.space');
             insertSpaceData(space);
         });
 
-        // Modal
-        function displayDetails(title) {
+        function displayDetails(time, date, location) {
             var modal = document.getElementById("myModal");
             var modalDetails = document.getElementById("modalDetails");
-            modalDetails.innerHTML = `${title}`;
+            modalDetails.innerHTML = `Time: ${time}<br>Date: ${date}<br>Location: ${location}`;
 
             modal.style.display = "block";
 
-            // Close the modal when hover
-            window.onmouseover = function(event) {
+            // Close the modal when clicked
+            window.onclick = function(event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }

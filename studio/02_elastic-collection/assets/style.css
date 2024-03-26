@@ -45,7 +45,7 @@ nav {
 	z-index: 999;
 }
 #title {
-	position: fixed;
+	position: absolute;
 	top: 10px;
 	font-family: "Lexend", sans-serif;
 	font-size: 40px;
@@ -59,16 +59,36 @@ nav {
 	font-weight: 100;
 	cursor: crosshair;
 }
+#about {
+	font-size: 2em;
+	font-family: "Lexend", sans-serif;
+	font-weight: 100;
+	text-align: justify;
+	width: fit-content;
+	height: fit-content;
+}
+#about a {
+	position: absolute;
+	top: 2%;
+	right: 1%;
+	border: 1px solid #1e1e1e;
+}
+#about a:hover {
+	background-color: #1e1e1e;
+	color: #f2f2f2;
+	font-weight: 100;
+	cursor: crosshair;
+}
 
 /* content */
 .space {
 	width: 100%;
 	padding: 0;
-	margin: 10% 0;
+	margin: 20% 0;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
-	justify-content: center;
+	justify-content: space-around;
 }
 .Spot {
 	width: 300px;

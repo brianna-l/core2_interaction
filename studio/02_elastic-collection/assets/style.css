@@ -72,6 +72,7 @@ nav {
 	top: 2%;
 	right: 1%;
 	border: 1px solid #1e1e1e;
+	padding: 0 5px;
 }
 #about a:hover {
 	background-color: #1e1e1e;
@@ -106,13 +107,13 @@ img {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	left: 1%;
-	bottom: 0;
+	left: 36%;
+	bottom: 10%;
 	width: auto;
 	height: auto;
 }
 .modal-content {
-	background-color: #fefefe;
+	background-color: #fefefe64;
 	margin: 5% 0;
 	padding: 20px 40px;
 	border: 1px solid #888;

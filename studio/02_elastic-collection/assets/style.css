@@ -34,12 +34,13 @@ button {
 	background-color: transparent;
 	border-radius: 0;
 	border: 1px solid #1e1e1e82;
+	transition: all 0.5s;
 }
 button:hover {
 	background-color: #1e1e1e;
 	color: #f2f2f2;
 	font-weight: 100;
-	cursor: crosshair;
+	cursor: url('../media/cursor1.svg'), auto;
 }
 nav {
 	z-index: 999;
@@ -52,6 +53,7 @@ nav {
 	font-weight: 100;
 	padding: 2px 6px;
 	border: 1px solid #1e1e1e;
+	transition: all 0.5s;
 }
 #title:hover {
 	background-color: #1e1e1e;
@@ -73,6 +75,7 @@ nav {
 	right: 1%;
 	border: 1px solid #1e1e1e;
 	padding: 0 5px;
+	transition: all 0.5s;
 }
 #about a:hover {
 	background-color: #1e1e1e;
@@ -90,6 +93,7 @@ nav {
 	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: space-around;
+	cursor: url(../media/cursor1.svg);
 }
 .Spot {
 	width: 300px;
@@ -108,16 +112,15 @@ img {
 	position: fixed;
 	z-index: 1;
 	left: 36%;
-	bottom: 10%;
+	top: 3%;
 	width: auto;
 	height: auto;
 }
 .modal-content {
 	background-color: #fefefe64;
-	margin: 5% 0;
-	padding: 20px 40px;
-	border: 1px solid #888;
-	width: 80%;
+	width: 100%;
+	font-family: "Lexend", sans-serif;
+	font-weight: 300;
 	border-radius: 10px;
 	cursor: crosshair;
 	text-align: center;

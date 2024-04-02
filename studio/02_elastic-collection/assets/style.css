@@ -15,7 +15,7 @@ a {
 	color: #1e1e1e;
 }
 a:hover {
-	cursor: zoom-in;
+	cursor: url(../media/cursor.png),default;
 }
 #adjust {
 	display: flex;
@@ -31,7 +31,7 @@ button {
 	font-size: 60px;
 	font-weight: 100;
 	aspect-ratio: 1/1;
-	background-color: transparent;
+	background-color: #fefefe40;
 	border-radius: 0;
 	border: 1px solid #1e1e1e82;
 	transition: all 0.5s;
@@ -40,7 +40,7 @@ button:hover {
 	background-color: #1e1e1e;
 	color: #f2f2f2;
 	font-weight: 100;
-	cursor: url('../media/cursor1.svg'), auto;
+	cursor: crosshair;
 }
 nav {
 	z-index: 999;
@@ -59,7 +59,6 @@ nav {
 	background-color: #1e1e1e;
 	color: #f2f2f2;
 	font-weight: 100;
-	cursor: crosshair;
 }
 #about {
 	font-size: 2em;
@@ -93,7 +92,7 @@ nav {
 	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: space-around;
-	cursor: url(../media/cursor1.svg);
+	cursor: url(../media/cursor.png),default;
 }
 .Spot {
 	width: 300px;
@@ -111,17 +110,19 @@ img {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	left: 36%;
-	top: 3%;
+	left: 5%;
+	bottom: 3%;
 	width: auto;
 	height: auto;
+	margin: 0 auto;
+	cursor: url(../media/cursor.png),default;
 }
 .modal-content {
-	background-color: #fefefe64;
+	background-color: #fefefe7f;
 	width: 100%;
 	font-family: "Lexend", sans-serif;
-	font-weight: 300;
-	border-radius: 10px;
-	cursor: crosshair;
+	font-size: 4em;
+	font-weight: 100;
 	text-align: center;
+	padding: 0 0;
 }

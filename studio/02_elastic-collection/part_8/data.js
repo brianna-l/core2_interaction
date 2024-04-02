@@ -1,7 +1,7 @@
 var space = [
     {
         num: '1',
-        title: 'GARDEN OF FLOWERS',
+        title: '"GARDEN OF FLOWERS"',
         date: 'January 16, 2024',
         time: '8:08:34 PM',
         location: 'Dali, China',
@@ -10,7 +10,7 @@ var space = [
     },
     {
         num: '2',
-        title: 'THE BASEMENT',
+        title: '"THE BASEMENT"',
         date: 'January 16, 2024',
         time: '3:48:49 PM',
         location: 'Dali, China',
@@ -19,7 +19,7 @@ var space = [
     },
     {
         num: '3',
-        title: 'PAWS STRIPS',
+        title: '"PAWS STRIPS"',
         date: 'January 17, 2024',
         time: '2:44:50 PM',
         location: 'Dali, China',
@@ -28,7 +28,7 @@ var space = [
     },
     {
         num: '4',
-        title: 'OLD DREAMS',
+        title: '"OLD DREAMS"',
         date: 'January 17, 2024',
         time: '2:49:43 PM',
         location: 'Dali, China',
@@ -37,7 +37,7 @@ var space = [
     },
     {
         num: '5',
-        title: 'LAKE OF SKY',
+        title: '"LAKE OF SKY"',
         date: 'January 17, 2024',
         time: '3:10:16 PM',
         location: 'Dali, China',
@@ -46,7 +46,7 @@ var space = [
     },
     {
         num: '6',
-        title: 'BURNED TRUNK',
+        title: '"BURNED TRUNK"',
         date: 'January 17, 2024',
         time: '10:57:35 PM',
         location: 'Dali, China',
@@ -55,7 +55,7 @@ var space = [
     },
     {
         num: '7',
-        title: 'UNKNOWN STONEART',
+        title: '"UNKNOWN STONEART"',
         date: 'February 29, 2024',
         time: '3:34:12 PM',
         location: 'NewYork, U.S.',
@@ -64,7 +64,7 @@ var space = [
     },
     {
         num: '8',
-        title: 'PIANO',
+        title: '"PIANO"',
         date: 'March 1, 2024',
         time: '12:21:39 PM',
         location: 'NewYork, U.S.',
@@ -73,7 +73,7 @@ var space = [
     },
     {
         num: '9',
-        title: 'PIECE OF CLOTH',
+        title: '"PIECE OF CLOTH"',
         date: 'March 1, 2024',
         time: '12:30:44 PM',
         location: 'NewYork, U.S.',
@@ -82,7 +82,7 @@ var space = [
     },
     {
         num: '10',
-        title: 'HER WARDROBE',
+        title: '"HER WARDROBE"',
         date: 'March 9, 2024',
         time: '3:52:44 PM',
         location: 'NewYork, U.S.',
@@ -91,7 +91,7 @@ var space = [
     },
     {
         num: '11',
-        title: 'PANCAKE',
+        title: '"PANCAKE"',
         date: 'March 10, 2024',
         time: '1:56:39 PM',
         location: 'NewYork, U.S.',
@@ -100,7 +100,7 @@ var space = [
     },
     {
         num: '12',
-        title: 'TIE DYE',
+        title: '"TIE DYE"',
         date: 'March 10, 2024',
         time: '2:00:51 PM',
         location: 'NewYork, U.S.',
@@ -109,7 +109,7 @@ var space = [
     },
     {
         num: '13',
-        title: 'CLIFF',
+        title: '"CLIFF"',
         date: 'March 10, 2024',
         time: '2:12:29 PM',
         location: 'NewYork, U.S.',
@@ -118,7 +118,7 @@ var space = [
     },
     {
         num: '14',
-        title: 'RUBBER CUT',
+        title: '"RUBBER CUT"',
         date: 'March 10, 2024',
         time: '2:28:51 PM',
         location: 'NewYork, U.S.',
@@ -127,7 +127,7 @@ var space = [
     },
     {
         num: '15',
-        title: 'GLOOMY SEA',
+        title: '"GLOOMY SEA"',
         date: 'March 10, 2024',
         time: '2:33:07 PM',
         location: 'NewYork, U.S.',
@@ -136,7 +136,7 @@ var space = [
     },
     {
         num: '16',
-        title: 'LONDON STREET',
+        title: '"LONDON STREET"',
         date: 'March 10, 2024',
         time: '2:38:12 PM',
         location: 'NewYork, U.S.',
@@ -145,7 +145,7 @@ var space = [
     },
     {
         num: '17',
-        title: 'NIHON',
+        title: '"NIHON"',
         date: 'March 10, 2024',
         time: '2:49:14 PM',
         location: 'NewYork, U.S.',
@@ -153,7 +153,7 @@ var space = [
         url: 'objects/17/index.html',
     },{
         num: '18',
-        title: 'FIRE IN HOUSE',
+        title: '"FIRE IN HOUSE"',
         date: 'March 11, 2024',
         time: '12:30:07 PM',
         location: 'NewYork, U.S.',
@@ -162,7 +162,7 @@ var space = [
     },
     {
         num: '19',
-        title: 'ANCIENT LANDSCAPE',
+        title: '"ANCIENT LANDSCAPE"',
         date: 'March 11, 2024',
         time: '12:30:07 PM',
         location: 'NewYork, U.S.',
@@ -171,7 +171,7 @@ var space = [
     },
     {
         num: '20',
-        title: 'THE FACTORY',
+        title: '"THE FACTORY"',
         date: 'March 11, 2024',
         time: '12:30:07 PM',
         location: 'NewYork, U.S.',
@@ -180,7 +180,7 @@ var space = [
     },
     {
         num: '21',
-        title: 'SUMMER MARKET',
+        title: '"SUMMER MARKET"',
         date: 'March 11, 2024',
         time: '5:01:29 PM',
         location: 'NewYork, U.S.',
@@ -189,7 +189,7 @@ var space = [
     },
     {
         num: '22',
-        title: 'DAMIES ROOM',
+        title: '"DAMIES ROOM"',
         date: 'March 11, 2024',
         time: '5:03:01 PM',
         location: 'NewYork, U.S.',
@@ -198,7 +198,7 @@ var space = [
     },
     {
         num: '23',
-        title: 'ABANDONED HOUSE',
+        title: '"ABANDONED HOUSE"',
         date: 'March 11, 2024',
         time: '7:04:33 PM',
         location: 'NewYork, U.S.',
@@ -207,7 +207,7 @@ var space = [
     },
     {
         num: '24',
-        title: 'CANDY WRAP',
+        title: '"CANDY WRAP"',
         date: 'March 22, 2024',
         time: '12:12:20 PM',
         location: 'NewYork, U.S.',
@@ -216,7 +216,7 @@ var space = [
     },
     {
         num: '25',
-        title: 'LOCKER',
+        title: '"LOCKER"',
         date: 'March 24, 2024',
         time: '12:56:07 PM',
         location: 'NewYork, U.S.',
@@ -225,7 +225,7 @@ var space = [
     },
     {
         num: '26',
-        title: 'TILE',
+        title: '"TILE"',
         date: 'March 24, 2024',
         time: '4:21:41 PM',
         location: 'NewYork, U.S.',

@@ -10,7 +10,7 @@ var space = [
     },
     {
         num: '2',
-        title: '"THE BASEMENT"',
+        title: '"WHISPERS FROM BELOW"',
         date: 'January 16, 2024',
         time: '3:48:49 PM',
         location: 'Dali, China',
@@ -19,7 +19,7 @@ var space = [
     },
     {
         num: '3',
-        title: '"PAWS STRIPS"',
+        title: '"CORRIDORS OF THE WILD"',
         date: 'January 17, 2024',
         time: '2:44:50 PM',
         location: 'Dali, China',
@@ -28,7 +28,7 @@ var space = [
     },
     {
         num: '4',
-        title: '"OLD DREAMS"',
+        title: '"STREAMHAVEN"',
         date: 'January 17, 2024',
         time: '2:49:43 PM',
         location: 'Dali, China',
@@ -37,7 +37,7 @@ var space = [
     },
     {
         num: '5',
-        title: '"LAKE OF SKY"',
+        title: '"MIRRORED REALM"',
         date: 'January 17, 2024',
         time: '3:10:16 PM',
         location: 'Dali, China',
@@ -46,7 +46,7 @@ var space = [
     },
     {
         num: '6',
-        title: '"BURNED TRUNK"',
+        title: '"RIBBONED TREES"',
         date: 'January 17, 2024',
         time: '10:57:35 PM',
         location: 'Dali, China',
@@ -55,7 +55,7 @@ var space = [
     },
     {
         num: '7',
-        title: '"UNKNOWN STONEART"',
+        title: '"INTANGIBLE DOORWAYS"',
         date: 'February 29, 2024',
         time: '3:34:12 PM',
         location: 'NewYork, U.S.',
@@ -64,7 +64,7 @@ var space = [
     },
     {
         num: '8',
-        title: '"PIANO"',
+        title: '"ELEVATED NEIGHBORS"',
         date: 'March 1, 2024',
         time: '12:21:39 PM',
         location: 'NewYork, U.S.',
@@ -73,7 +73,7 @@ var space = [
     },
     {
         num: '9',
-        title: '"PIECE OF CLOTH"',
+        title: '"CELESTIAL PILLAR"',
         date: 'March 1, 2024',
         time: '12:30:44 PM',
         location: 'NewYork, U.S.',
@@ -82,7 +82,7 @@ var space = [
     },
     {
         num: '10',
-        title: '"HER WARDROBE"',
+        title: '"WOVEN WARDROBE"',
         date: 'March 9, 2024',
         time: '3:52:44 PM',
         location: 'NewYork, U.S.',
@@ -91,7 +91,7 @@ var space = [
     },
     {
         num: '11',
-        title: '"PANCAKE"',
+        title: '"VISTA OF THE VOID"',
         date: 'March 10, 2024',
         time: '1:56:39 PM',
         location: 'NewYork, U.S.',
@@ -100,7 +100,7 @@ var space = [
     },
     {
         num: '12',
-        title: '"TIE DYE"',
+        title: '"THE SILHOUETTE AVENUE"',
         date: 'March 10, 2024',
         time: '2:00:51 PM',
         location: 'NewYork, U.S.',
@@ -109,7 +109,7 @@ var space = [
     },
     {
         num: '13',
-        title: '"CLIFF"',
+        title: '"THE PHANTOM MONOLITHS"',
         date: 'March 10, 2024',
         time: '2:12:29 PM',
         location: 'NewYork, U.S.',
@@ -118,7 +118,7 @@ var space = [
     },
     {
         num: '14',
-        title: '"RUBBER CUT"',
+        title: '"GRAY FACADE"',
         date: 'March 10, 2024',
         time: '2:28:51 PM',
         location: 'NewYork, U.S.',
@@ -127,7 +127,7 @@ var space = [
     },
     {
         num: '15',
-        title: '"GLOOMY SEA"',
+        title: '"SHROUDED TOWN"',
         date: 'March 10, 2024',
         time: '2:33:07 PM',
         location: 'NewYork, U.S.',
@@ -136,7 +136,7 @@ var space = [
     },
     {
         num: '16',
-        title: '"LONDON STREET"',
+        title: '"MEMORY LANE"',
         date: 'March 10, 2024',
         time: '2:38:12 PM',
         location: 'NewYork, U.S.',
@@ -145,7 +145,7 @@ var space = [
     },
     {
         num: '17',
-        title: '"NIHON"',
+        title: '"NEON STREET"',
         date: 'March 10, 2024',
         time: '2:49:14 PM',
         location: 'NewYork, U.S.',
@@ -153,7 +153,7 @@ var space = [
         url: 'objects/17/index.html',
     },{
         num: '18',
-        title: '"FIRE IN HOUSE"',
+        title: '"BURNED HOUSE"',
         date: 'March 11, 2024',
         time: '12:30:07 PM',
         location: 'NewYork, U.S.',
@@ -162,7 +162,7 @@ var space = [
     },
     {
         num: '19',
-        title: '"ANCIENT LANDSCAPE"',
+        title: '"AZURE DYNASTY"',
         date: 'March 11, 2024',
         time: '12:30:07 PM',
         location: 'NewYork, U.S.',
@@ -171,7 +171,7 @@ var space = [
     },
     {
         num: '20',
-        title: '"THE FACTORY"',
+        title: '"STEAMLINE"',
         date: 'March 11, 2024',
         time: '12:30:07 PM',
         location: 'NewYork, U.S.',
@@ -180,7 +180,7 @@ var space = [
     },
     {
         num: '21',
-        title: '"SUMMER MARKET"',
+        title: '"FRUIT MARKET"',
         date: 'March 11, 2024',
         time: '5:01:29 PM',
         location: 'NewYork, U.S.',
@@ -189,7 +189,7 @@ var space = [
     },
     {
         num: '22',
-        title: '"DAMIES ROOM"',
+        title: '"CYTIK THEATRE"',
         date: 'March 11, 2024',
         time: '5:03:01 PM',
         location: 'NewYork, U.S.',
@@ -198,7 +198,7 @@ var space = [
     },
     {
         num: '23',
-        title: '"ABANDONED HOUSE"',
+        title: '"RECORDING ROOM"',
         date: 'March 11, 2024',
         time: '7:04:33 PM',
         location: 'NewYork, U.S.',
@@ -207,7 +207,7 @@ var space = [
     },
     {
         num: '24',
-        title: '"CANDY WRAP"',
+        title: '"CANDY VALLEY"',
         date: 'March 22, 2024',
         time: '12:12:20 PM',
         location: 'NewYork, U.S.',
@@ -216,7 +216,7 @@ var space = [
     },
     {
         num: '25',
-        title: '"LOCKER"',
+        title: '"PACIFIC LUXURIES"',
         date: 'March 24, 2024',
         time: '12:56:07 PM',
         location: 'NewYork, U.S.',
@@ -225,7 +225,7 @@ var space = [
     },
     {
         num: '26',
-        title: '"TILE"',
+        title: '"LAND OF CONTOUR"',
         date: 'March 24, 2024',
         time: '4:21:41 PM',
         location: 'NewYork, U.S.',

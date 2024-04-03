@@ -126,3 +126,25 @@ img {
 	text-align: center;
 	padding: 0 0;
 }
+
+@media only screen and (max-width: 600px){
+	#adjust {
+		right: 13%;
+	}
+	button {
+		width: fit-content;
+	}
+	#title {
+		font-size: 14vw;
+	}
+	#about a {
+		width: fit-content;
+		top: 11%;
+		left: 2%;
+		right: none;
+		border: none;
+	}
+	.space {
+		margin: 40% 0;
+	}
+}

@@ -12,7 +12,6 @@
 }
 
 .paragraph p {
-    width: 60%;
     margin: 0 auto;
 	font-family: "Lexend", sans-serif;
 	font-size: 16px;
@@ -39,5 +38,18 @@
     }
     80%{
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .heading {
+        margin-top: 45%;
+        font-size: 5em;
+    }
+    .paragraph p {
+        width: 80%;
+    }
+    .back {
+        margin: 20% auto;
     }
 }

@@ -1,5 +1,5 @@
-var widths = ['150px', '200px', '250px', '300px', '350px', '400px', '450px', '500px', '550px', '600px', '650px', '700px', '750px', '800px'];
-var currentWidthIndex = 3;
+var widths = ['50px', '100px', '150px', '200px', '250px', '300px', '350px', '400px', '450px', '500px', '550px', '600px', '650px', '700px', '750px', '800px'];
+var currentWidthIndex = 5;
 
 // Zoom In Button
 document.getElementById('zoomInBtn').addEventListener('click', function () {

@@ -2,12 +2,13 @@
 // -----------------------
 
 var key = 'dd5e56c491cc41e677b12f4481570d82';
-var zip = 10011;
+var lat = 40.730610;
+var lon = -73.935242;
 
 // API URL
 // -----------------------
 
-var URL = `https://api.openweathermap.org/data/2.5/weather?zip=${ zip }&units=imperial&appid=${ key }`;
+var URL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${key}`;
 
 // Fetch request
 // -----------------------
@@ -33,19 +34,16 @@ function render(data) {
 
     // edit info element
     infoElement.innerHTML = `
-        <p>${ zip }</p>
-        <p>${ data.main.temp } F</p>
-        <p>${ data.wind.deg } deg</p>
-        <p>${ data.wind.speed } mph</p>
+        <p>${ lat }</p>
+        <p>${ lon }</p>
+        <p>${ data.list[0].components.co } μg/m3</p>
+        <p>${ data.list[0].components.no } μg/m3</p>
+        <p>${ data.list[0].components.o3 } μg/m3</p>
+        <p>${ data.list[0].components.so2 } μg/m3</p>
+        <p>${ data.list[0].components.pm2_5 } μg/m3</p>
+        <p>${ data.list[0].components.pm10 } μg/m3</p>
+        <p>${ data.list[0].components.nh3 } μg/m3</p>
     `;
-
-
-    // edit info element
-    containerElement.style.background = `hsl(${ data.main.temp }, 100%, 50%`;
-
-    // edit weather vane
-    weatherVaneElement.style.transform =   `rotate(${data.wind.deg}deg)`;
-    weatherVaneElement.style.animationDuration = `${data.wind.speed}s `;
 
     console.log(data);
 }

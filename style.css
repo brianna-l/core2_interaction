@@ -13,92 +13,31 @@ a:hover {
 }
 
 
-#home {
-    display: flex;
-    flex-direction: row;
-    border: solid 0.5px black;
-    height: 2vh;
-}
-#home div {
-    padding-right: 1vw;
-    padding-left: 1vw;
-}
-#home a {
-    color: black;
-}
-#home a:hover {
-    color: burlywood;
-}
-
 #title {
     color: black;
-    text-align: right;
+    text-align: left;
     margin-top: 0;
     height: 10vh;
-    animation: title 6s infinite;
-}
-@keyframes title {
-    0% {
-        margin-right: 0;
-    }
-    70% {
-        margin-right: 19%;
-    }
-    100% {
-        margin-right: 0;
-    }
 }
 
-#content {
+.pieces {
+    border: solid 1px black;
+    display: flex;
+    line-height: 2em;
+}
+
+.projects {
     width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap:nowrap;
     margin-bottom: 20vh;
 }
 
-h1 {
-    font-size: 4vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10%;
-}
-h3 {
-    font-size: 2vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 2.5em;
-    color: black;
-}
-h2 {
-    font-size: 2vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 3em;
-    color: black;
-}
-p {
-    font-size: 2vw;
-}
-
-
-#box1 {
-    width: 90%;
-    margin: auto;
-}
-#box1 h3{
-    width: 45%;
-    float: left;
-}
-#box1 h2{
-    width: 30%;
-    float: left;
-}
-#box1 p{
-    width: 25%;
-    float: right;
-    line-height: 3em;
-    text-align: left;
-}
-.row3{
-    color: black;
-}
-.row3:hover {
-    color: burlywood;
+.workshops {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    margin-bottom: 20vh;
 }

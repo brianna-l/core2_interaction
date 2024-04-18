@@ -62,9 +62,10 @@ nav a {
     color: white;
     letter-spacing: 0.1em;
     padding: 0 3vw;
+    filter: blur(3px);
 }
 nav a:hover {
-    text-decoration: underline;
+    filter: blur(0);
 }
 
 /* HEADER */
@@ -118,6 +119,7 @@ nav a:hover {
 }
 #sub p {
     padding: 0 3vw;
+    filter: blur(1px);
 }
 
 /* LARGE STRUCTURE */

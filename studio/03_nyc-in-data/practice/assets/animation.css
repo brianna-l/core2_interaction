@@ -1,0 +1,78 @@
+/* FALL DOWN */
+main {
+    width: 35%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    position: fixed;
+    border: solid 1px black;
+    overflow: hidden;
+}
+.line {
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background-color: black;
+    animation: fall 3s ease-in forwards;
+}
+@keyframes fall {
+    from {
+        top: 0;
+    }
+}
+
+/* CHANGE EFFECT */
+section {
+    width: 35%;
+    height: 80%;
+    top: 10%;
+    left: 55%;
+    position: fixed;
+    border: solid 1px black;
+    overflow: hidden;
+}
+#labels {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.stroke {
+    position: absolute;
+    width: 60%;
+    height: 5px;
+    background-color: black;
+    animation: change 10s infinite ease-in-out;
+}
+@keyframes change {
+    0% {
+        top: 0%;
+        background-color: rgb(38, 255, 92);
+        transform: translateY(0%) translateX(0%) scale(2);
+        filter: blur(8px);
+    }
+    40% {
+        background-color: rgb(38, 172, 255);
+        transform: translateX(-10%) scale(0.8);
+        filter: blur(0px);
+    }
+    45% {
+        transform: translateX(20%) scale(0.7);
+        filter: blur(1px);
+    }
+    50% {
+        transform: translateX(5%) scale(0.7);
+        filter: blur(0px);
+    }
+    80% {
+        background-color: rgb(136, 0, 248);
+        top: 100%;
+        transform: translateX(0%) scale(2);
+        filter: blur(8px);
+    }
+    100% {
+        background-color: rgb(248, 0, 41);
+        top: 100%;
+        transform: translateX(0%) scale(2);
+        filter: blur(8px);
+    }
+}

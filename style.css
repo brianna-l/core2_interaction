@@ -1,6 +1,12 @@
+/* MAIN SETTING */
+/* ----------------- */
+
 html {
     width: 100%;
-    background-color: #c61400;
+    background-color: #000000;
+    background-image: repeating-linear-gradient(41deg, rgba(219, 0, 0, 0.743), rgba(255, 77, 0, 0.824) 10px, rgba(255, 157, 0, 0.824) 20px, transparent 3vw);
+    background-size: 8px;
+    filter: sepia(80%);
 }
 body{
     margin: 0 2%;
@@ -16,6 +22,7 @@ h2 {
     text-align: left;
     margin-top: 20vh;
     margin-bottom: 5vh;
+    filter: drop-shadow(-4px 3px 0 rgb(253, 226, 116));
 }
 h3 {
     background-color: #c61400;
@@ -34,6 +41,9 @@ a:hover {
     color: white;
 }
 
+/* NAVIGATION */
+/* ----------------- */
+
 nav {
     position: fixed;
     bottom: 0;
@@ -43,18 +53,24 @@ nav {
     justify-content: space-between;
     background-color: #c61400;
     text-transform: uppercase;
+    border-radius: 25px;
+    z-index: 3;
+    border: 1px solid rgb(253, 226, 116);
 }
 nav a {
     color: white;
-    font-size: 1.5vw;
     letter-spacing: 0.1em;
+    padding: 0 3vw;
 }
 nav a:hover {
     text-decoration: underline;
 }
 
+/* TITLE */
+/* ----------------- */
+
 #title {
-    margin-top: 5%;
+    margin-top: 3%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 100;
     background-color: #c61400;
@@ -63,17 +79,31 @@ nav a:hover {
     font-size: 12.5vw;
     border-radius: 50%;
     line-height: 72vh;
+    filter: drop-shadow(-3px -1px 0 rgb(253, 226, 116));
 }
+
+/* HEADER */
+/* ----------------- */
 
 #sub {
     margin: 0 auto;
     width: 100%;
+    font-size: 2vw;
     display: inline-flex;
     justify-content: space-between;
     background-color: #c61400;
     color: white;
-    font-size: 1.5vw;
+    border-radius: 25px;
+    text-transform: uppercase;
+    border: 1px solid rgb(253, 226, 116);
 }
+#sub p {
+    padding: 0 3vw;
+}
+
+/* LARGE STRUCTURE */
+/* each main container */
+/* ----------------- */
 
 .box {
     text-align: center;
@@ -83,22 +113,29 @@ nav a:hover {
     font-size: 3vw;
 }
 
+/* within large container */
 .blocks {
     margin: 0 auto;
     width: 93%;
     display: flex;
+    flex-wrap: nowrap;
     gap: 2rem;
 }
 
+/* each block */
 .pieces {
     border: solid 1px #c61400;
     color: #c61400;
     display: flex;
     flex-direction: column;
-    line-height: 2em;
+    line-height: 1em;
     padding: 20px 30px;
     text-transform: uppercase;
 }
+
+
+/* IMGS */
+/* ----------------- */
 
 .image {
     margin: 15px auto;
@@ -189,6 +226,10 @@ img {
     background-position: center;
 }
 
+
+/* LEFT RIGHT COLUMNS */
+/* ----------------- */
+
 .projects {
     width: 50%;
     display: flex;
@@ -205,4 +246,23 @@ img {
     flex-wrap:nowrap;
     margin-bottom: 20vh;
     gap: 1rem;
+}
+
+/* MEDIA */
+/* ----------------- */
+
+@media screen and (max-width: 600px){
+    #title {
+        margin-top: 10%;
+    }
+    .blocks {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .workshops {
+        width: 100%;
+    }
+    .projects {
+        width: 100%;
+    }
 }

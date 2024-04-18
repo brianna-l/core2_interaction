@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+text {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: baseline;
+    margin: 6vh auto;
+}
+
+iframe {
+    width: 90%;
+    aspect-ratio: 4/3;
+    margin: 0 auto;
+}

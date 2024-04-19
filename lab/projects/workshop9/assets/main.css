@@ -25,6 +25,12 @@ p {
 	left: 0;
 	padding: 10px;
 }
+#Level {
+	right: 2%;
+	bottom: 35%;
+	position: absolute;
+	width: fit-content;
+}
 
 .background {
     position: absolute;

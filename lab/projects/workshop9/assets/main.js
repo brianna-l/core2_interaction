@@ -41,7 +41,7 @@ function render(data) {
         <p>NO2 <i style="color: #FF6347;">(Nitrogen dioxide)</i>: ${ data.list[0].components.no2 } µg/m3</p>
         <p>O3 <i style="color: #FF6347;">(Ozone)</i>: ${ data.list[0].components.o3 } µg/m3</p>
         <p>SO2 <i style="color: #FF6347;">(Sulphur dioxide)</i>: ${ data.list[0].components.so2 } µg/m3</p>
-        <p>PM2.5 <i style="color: #FF6347;">(Fine particles matter)</i>: ${ data.list[0].components.pm2_5 } µg/m3</p>
+        <p><u>PM2.5 <i style="color: #FF6347;">(Fine particles matter)</i>: ${ data.list[0].components.pm2_5 } µg/m3</u></p>
         <p>PM10 <i style="color: #FF6347;">(Coarse particulate matter)</i>: ${ data.list[0].components.pm10 } µg/m3</p>
         <p>NH3 <i style="color: #FF6347;">(Ammonia)</i>: ${ data.list[0].components.nh3 } µg/m3</p>
     
@@ -49,7 +49,7 @@ function render(data) {
 
 
     var pm25 = data.list[0].components.pm2_5;
-    var maxPM25 = 500; // Assuming 500 µg/m3 is the highest significant value for PM2.5
+    var maxPM25 = 35; // Assuming 35 µg/m3 is the highest significant value for PM2.5
     var scale = Math.max(0.1, Math.min(1, pm25 / maxPM25));
 
     // Apply scale transformation to weather vane
@@ -57,3 +57,9 @@ function render(data) {
 
     console.log(data);
 }
+
+
+
+var level = document.getElementById("Level");
+level.innerHTML = '<strong>current</strong> vs NYC average 35µg/m3';
+console.log(level)

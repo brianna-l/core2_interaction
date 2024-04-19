@@ -28,8 +28,9 @@ h2 {
 h3 {
     background-color: #c61400;
     color: white;
-    margin-bottom: 0;
+    margin: 15% auto 0;
     border-radius: 10px;
+    width: 76%;
 }
 a {
     font-size: xx-large;
@@ -145,7 +146,6 @@ nav a:hover {
 
 /* each block */
 .pieces {
-    border: solid 1px #c61400;
     color: #c61400;
     display: flex;
     flex-direction: column;
@@ -163,6 +163,8 @@ nav a:hover {
     width: 90%;
     aspect-ratio: 4/3;
     background-color:rgb(204, 228, 237);
+    border: solid 1px red;
+    border-radius: 5px;
 }
 img {
     width: 100%;
@@ -272,7 +274,11 @@ img {
 /* MEDIA */
 /* ----------------- */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
+    nav a {
+        filter: none;
+        color: rgb(253, 226, 116);
+    }
     #title {
         margin-top: 10%;
     }
@@ -285,5 +291,37 @@ img {
     }
     .projects {
         width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    a {
+        font-size: 1.5vw;
+    }
+    h2 {
+        font-size: 10vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    #container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+    .box {
+        width: 45%;
+        font-size: 1.5vw;
+    }
+    .blocks {
+        margin: 0;
+        width: 100%;
+    }
+    .projects, .workshops {
+        width: 100%;
+    }
+    .pieces {
+        padding: 5px 5px;
     }
 }

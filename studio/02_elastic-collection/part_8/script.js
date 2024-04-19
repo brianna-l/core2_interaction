@@ -50,19 +50,3 @@ var mainElement = document.querySelector('.space');
         space.forEach((space) => {
             insertSpaceData(space);
         });
-
-        // Modal
-        function displayDetails(title) {
-            var modal = document.getElementById("myModal");
-            var modalDetails = document.getElementById("modalDetails");
-            modalDetails.innerHTML = `${title}`;
-
-            modal.style.display = "block";
-
-            // Close the modal when hover
-            window.onmouseover = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        }

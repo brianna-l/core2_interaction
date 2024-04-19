@@ -8,7 +8,7 @@ var lon = -73.935242;
 // API URL
 // -----------------------
 
-var URL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${key}`;
+var URL = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${key}`;
 
 // Fetch request
 // -----------------------
@@ -91,10 +91,6 @@ function render(data) {
         paletteElement.appendChild(colorSquare);
     });
 
-    var level = document.getElementById("Level");
-    level.innerHTML = '<strong>current</strong> / NYC average 35µg/m3';
-
-    console.log(level)
     console.log(data);
     console.log(currentColor);
     console.log(colorSwatch);

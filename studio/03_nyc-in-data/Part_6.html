@@ -7,34 +7,14 @@
     <link rel="stylesheet" href="assets/Part_6.css">
 </head>
 <body>
-    <div class="box" id="box1" onclick="openModal('modal1')"><h1>STYLE 1</h1></div>
-    <div class="box" id="box2" onclick="openModal('modal2')"><h1>STYLE 2</h1></div>
-
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h1>Falling</h1>
-            <div id="window1" class="window">
+    <div class="box" id="box1" onclick="openModal('window')"><h1>API : Falling Amount & Color Change</h1><div class="click">open window</div></div>
+            <div id="window" class="window">
                 <div id="circles">
-                    <div id="red"></div><div id="yellow"></div><div id="green"></div>
+                    <div class="close" onclick="closeModal('window')" id="red"></div><div id="yellow"></div><div id="green"></div>
                 </div>
                 <hr>
                 <iframe src="practice/falling.html" frameborder="0" width="100%" height="92%"></iframe>
             </div>
-        </div>
-    </div>
-
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h1>Color Change</h1>
-            <div id="window2" class="window">
-                <div id="circles">
-                    <div id="red"></div><div id="yellow"></div><div id="green"></div>
-                </div>
-                <hr>
-        </div>
-    </div>
 
     <script src="assets/part6.js"></script>
 </body>

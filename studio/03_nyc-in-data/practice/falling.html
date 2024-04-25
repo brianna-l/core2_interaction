@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/falling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <a href="https://www.sanitationfoundation.org/">origin: sanitationfoundation.org</a><hr>
+        <h1>-- NYC Big-Spring-Clean</h1>
+        <p>[Current level of PM2.5]</p>
+        <p>[Present by a mock ratio of <i id="Green">collected : uncollected</i> trash]
+            <div class="modal">
+                <div class="modal-content">
+                    uncollected trash corresponds to the percent of PM2.5
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    100% = 35 µg/m3 [ 24h average in NYC ]
+                </div>
+            </div></p>
+        <h1 id="Date">-- 2024/04/22</h1>
+        <h1 id="Time">-- 19:54:36 
+            <div class="modal">
+                <div class="modal-content">
+                    current time
+                </div>
+            </div></h1>
+    </header>
+
+    <button class="note" onclick="openModal('modal')"></button>
+
+    <div id="Ratio">
+        <span><div class="oppositeRatio"></div><h1>:</h1><div class="pollutionLevel"></div></span>
+        <div class="PM25" id="Green"></div>
+    </div>
+    
+    <div class="modal">
+        <div class="modal-content">
+            each line represents 1%
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            90:10 - GOOD
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            70:30 - FINE
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            50:50 - ACCEPTABLE
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            30:70 - WHAT?
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            100:0 - OHNO
+        </div>
+    </div>
+        
+    <nav id="Green">
+        <h1>-- Air</h1>
+        <h1>-- Ground</h1>
+        <h1>-- Water</h1>
+        <h1>-- Soil</h1>
+        <h1>-- Underground</h1>
+    </nav>
+
+    <div id="Container"></div>
+
+    <br><br><div class="modal">
+        <div class="modal-content">
+            less collected trash = higher pm2.5
+        </div>
+    </div>
+
+    <div id="About">
+        <h1>ABOUT</h1>
+        <p>Trash contributes significantly to environmental pollution, affecting land, water, and air quality. Improper waste disposal can leach harmful chemicals into the soil and waterways, disrupting ecosystems and contaminating drinking water sources. Recycling and responsible waste management not only reduce waste in landfills but also conserve resources and energy.</p>
+    </div>
+
+    <main>
+        <div class="Events">
+            <div>
+                <div class="Large">4/13</div>
+                <h1>Lower East Side Community Cleanup Saturday 10:00 AM - 1:00 PM</h1>
+                <p>Meet at ICP for a Lower East Side community cleanup, led by the Sanitation Foundation and help make a direct impact.</p>
+            </div>
+        </div>
+        <div class="Events">
+            <div>
+                <div class="Large">4/17</div>
+                <h1>City As Canvas Wednesday 6:30 PM - 8:00 PM</h1>
+                <p>A conversation centered on how artists engage and document undervalued and reclaimed city land.</p>
+            </div>
+        </div>
+        <div class="Events">
+            <div>
+                <div class="Large">4/18</div>
+                <h1>FREE Third Thursday x ICP Late Night Wednesday 6:00 PM - 9:00 PM</h1>
+                <p>Join us for a monthly "Third Thursday Late Night" at the International Center of Photography.</p>
+            </div>
+        </div>
+        <div class="Events">
+            <div>
+                <div class="Large">4/20</div>
+                <h1>Kips Bay Community Cleanup Event with CM Rivera Saturday 10:00 AM - 11:30 AM</h1>
+                <p>Join Councilmember Rivera and the Kips Bay community for a neighborhood cleanup on Saturday.</p>
+            </div>
+        </div>
+        <div id="End">
+            <div class="Large">TBD</div>
+            <p>Spring ends shortly, but cleanup continues...</p>
+        </div>    
+    </main>
+
+<!-- FALL -->
+    <div class="fall"></div>
+
+
+    <div class="modal">
+        <div class="modal-content">
+            more trash outside = more pollution to our planet
+        </div>
+    </div>
+
+    <script src="assets/falling.js"></script>
+</body>
+</html>

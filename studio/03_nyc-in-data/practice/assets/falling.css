@@ -1,0 +1,364 @@
+html {
+    background-color: #edf9ec;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5% 10%;
+    border: solid 1px #19b904;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+/* GENERAL */
+h1 {
+    font-weight: 100;
+    font-size: 2em;
+    font-family: "M PLUS 1", sans-serif;
+}
+p {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 200;
+}
+#Green {
+    color: #19b904;
+    font-weight: 300;
+}
+/* HEADER */
+header {
+  font-family: "M PLUS 1", sans-serif;
+  line-height: 25px;
+  margin-top: 0;
+}
+header p {
+    font-weight: 200;
+}
+header a {
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    float: right;
+    font-weight: 200;
+}
+header a:hover {
+    color: #19b904;
+}
+
+#Time {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.note {
+    position: sticky;
+    top: 0;
+    left: 90%;
+    background-color: #edf9ec;
+    border: 1px solid #19b904;
+    z-index: 1;
+    width: 7vw;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+.note:hover {
+    background-color: var(--dynamic-bg-color);
+    border: 1px solid #ffffff;
+}
+.modal {
+    content: "";
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    height: min-content;
+    font-family: "M PLUS 1", sans-serif;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+}
+.modal-content {
+    background-color: var(--dynamic-bg-color);
+    padding: 0 2px;
+    border: 2px solid #ffffff;
+    color: black;
+    width: 100%;
+    height: min-content;
+    margin: 0;
+    font-family: monospace;
+    font-size: small;
+    text-align: center;
+}
+.modal-content:hover {
+    background-color: #edf9ec;
+    border: 2px solid #19b904;
+    cursor: pointer;
+}
+
+/* RATIO */
+#Ratio {
+    margin: 0 auto;
+    line-height: 0;
+    margin-top: -3%;
+    z-index: 1;
+}
+#Ratio span {
+    display: flex;
+}
+#Ratio h1{
+    font-size: 25vw;
+    text-align: left;
+    font-family: "Hepta Slab", serif;
+    font-weight: 1;
+}
+#Ratio p {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+}
+
+/* LEVEL */
+nav {
+    position: absolute;
+    margin-top: 50vh;
+    line-height: 50vh;
+    z-index: 0;
+}
+
+/* CONTAINER */
+#Container {
+    margin: 0 auto;
+    width: 45%;
+    margin-top: 10vh;
+    aspect-ratio: 1/1.1;
+    border: solid 1px black;
+    z-index: 0;
+}
+:root {
+    --dynamic-bg-color: #f8f8f8;
+}
+#Container::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    background-color: #f8f8f8;
+    z-index: 0;
+    width: 35vw;
+    height: 2vh;
+}
+
+/* ABOUT */
+#About {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30vh auto;
+    text-align: center;
+    gap: 2rem;
+    background-color: #f8f8f89d;
+    z-index: 1;
+}
+
+/* EVENTS */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 30vh;
+}
+.Events {
+    width: 47%;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px black;
+    height: fit-content;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #f8f8f89d;
+    z-index: 1;
+}
+.Large {
+    font-size: 20vw;
+    font-family: "Hepta Slab", serif;
+    font-weight: 1;
+    margin-left: -5%;
+    margin-top: -20%;
+}
+.Events h1 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.Events p {
+    width: 80%;
+    margin: 5vh auto;
+}
+#End {
+    margin: 10vh auto;
+    text-align: center;
+    background-color: #f8f8f89d;
+    z-index: 1;
+}
+#End .Large {
+    margin-left: 2%;
+}
+
+/* FALL DOWN */
+/* ------------------- */
+
+.fall {
+    width: 98%;
+    top: -10%;
+    left: 2%;
+    position: absolute;
+    pointer-events: none;
+}
+.line {
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    background-color: var(--dynamic-bg-color);
+    animation: fall 3s ease-in forwards;
+}
+@keyframes fall {
+    from {
+        top: 0;
+    }
+}
+
+
+@media screen and (max-width: 1050px){
+
+    main {
+        gap: 1rem;
+    }
+    .Events {
+        width: 55%;
+    }
+    .Events h1 {
+        margin: 1vh auto 2vh;
+    }
+    .Events p {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 850px){
+
+    main {
+        gap: 1rem;
+    }
+    .Events {
+        width: 65%;
+    }
+    .Events h1 {
+        margin: 1vh auto 2vh;
+    }
+    .Events p {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 700px){
+
+    #Ratio h1 {
+        font-size: 30vw;
+        font-weight: 100;
+    }
+    main {
+        margin-top: 15vh;
+        gap: 1rem;
+    }
+    .Events {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 630px){
+
+    main {
+        margin-top: 15vh;
+        gap: 1rem;
+    }
+    .Events {
+        width: 80%;
+    }
+    .Events h1 {
+        margin: 5vh auto 2vh;
+    }
+}
+@media screen and (max-width: 570px){
+
+    main {
+        margin-top: 15vh;
+        gap: 1rem;
+    }
+    .Events {
+        width: 90%;
+    }
+    .Events h1 {
+        margin: 5vh auto 2vh;
+    }
+    .Events p {
+        width: 60%;
+    }
+    #About {
+        width: 70%;
+        margin: 10vh auto;
+    }
+}
+@media screen and (max-width: 480px){
+
+    h1 {
+        font-weight: 200;
+        font-size: 1.5em;
+    }
+    p {
+        font-family: "M PLUS 1", sans-serif;
+        font-weight: 200;
+    }
+    nav {
+        margin-top: 38vh;
+        line-height: 30vh;
+    }
+    header a {
+        color: #19b904;
+        float: none;
+        font-weight: 300;
+        margin-top: -10px;
+    }
+    #Ratio h1{
+        font-size: 35vw;
+        font-weight: 100;
+    }
+    #Ratio p {
+        right: 8%;
+        bottom: 15%;
+        background-color: #f8f8f89d;
+    }
+    #Container {
+        margin-top: 8vh;
+    }
+    #Container::after {
+        width: 35vw;
+    }
+    #About {
+        width: 100%;
+    }
+    #About p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    main {
+        margin-top: 10vh;
+        gap: 2rem;
+    }
+    .Events {
+        width: 100%;
+    }
+    .Events h1 {
+        width: 70%;
+        margin: 4vh auto 2vh;
+    }
+    .Events p {
+        width: 75%;
+        margin: 0 auto;
+    }
+}

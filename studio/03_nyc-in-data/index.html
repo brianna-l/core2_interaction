@@ -11,19 +11,43 @@
 </head>
 <body>
     <header>
-        <a href="https://www.sanitationfoundation.org/">origin: sanitationfoundation.org</a><hr>
-        <h1>-- NYC Big-Spring-Clean</h1>
-        <p>[Current level of PM2.5]</p>
-        <p>[Present by a mock ratio of <i id="Green">collected : uncollected</i> trash]</p>
-        <h1 id="Date">-- 2024/04/22</h1>
-        <h1 id="Time">-- 19:54:36</h1>
+        <a href="https://www.sanitationfoundation.org/">events hosted by sanitationfoundation.org</a><hr>
+        <h1 id="Event">NY CITY</h1>
+        <h1 id="Series">BigSpringClean</h1>
     </header>
-
-    <div id="Ratio">
-        <h1>12:88</h1>
-        <p id="Green">15.76μg/m3</p>
+    <div id="Update">
+        <h1 id="Date">
+            <div class="Year"></div>/
+            <div class="Month"></div>/
+            <div class="Day"></div>
+        </h1>
+        <h1 id="Time">
+            <div class="Hours"></div>:
+            <div class="Minutes"></div>:
+            <div class="Seconds"></div>
+        </h1>
     </div>
 
+    <div id="Ratio">
+        <span><div class="PM25" id="Green"></div><div class="unit" id="Green">μg/m3<span class="texthover">pm2.5 unit</span></div></span>
+    </div>
+
+    <div class="key">
+        <div id="one">air pollution: <div class="pm25def" id="Green">PM2.5 concentration<span class="texthover2">fine particulate matter that are 2.5 microns or less in diameter</span></div></div>
+        <div id="two">
+            <span>
+                <div id="line"><span class="texthover3" id="Green">falling lines</span></div><div>= </div><div>uncollected trash</div>
+            </span>
+        </div>
+        <p>higher PM2.5 = more trash</p>
+        <div id="Color">
+            <span>
+                <div>low</div><div id="pallete"></div><div>high</div>
+            </span>
+        </div>
+    </div>
+
+        
     <nav id="Green">
         <h1>-- Air</h1>
         <h1>-- Ground</h1>
@@ -32,11 +56,11 @@
         <h1>-- Underground</h1>
     </nav>
 
-    <div id="Container"></div>
 
     <div id="About">
-        <h1>ABOUT</h1>
-        <p>Trash contributes significantly to environmental pollution, affecting land, water, and air quality. Improper waste disposal can leach harmful chemicals into the soil and waterways, disrupting ecosystems and contaminating drinking water sources. Recycling and responsible waste management not only reduce waste in landfills but also conserve resources and energy.</p>
+        <h1>TRASH & POLLUTION</h1>
+        <p>Trash contributes significantly to environmental pollution, affecting land, water, and air quality. Improper waste disposal can <i id="Green">leach harmful chemicals into the soil and waterways, disrupting ecosystems and contaminating drinking water sources</i>. Recycling and responsible waste management not only reduce waste in landfills but also conserve resources and energy.</p>
+        <p>Streets in NYC have lots of wastes outside of bins. Our commitment is to collect and dispose these wastes in the right manner, and hosts events to raise awareness of this issue around the city through photographing street views and the progress.</p>
     </div>
 
     <main>
@@ -73,5 +97,12 @@
             <p>Spring ends shortly, but cleanup continues...</p>
         </div>    
     </main>
+
+<!-- FALL -->
+    <div class="fall"></div>
+
+    
+<!-- SCRIPT -->
+    <script src="assets/index.js"></script>
 </body>
 </html>

@@ -4,9 +4,10 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    margin: 2% 5% 10%;
+    margin: 5% 5% 10%;
     border: solid 1px #19b904;
     background-color: #f8f8f8;
+    height: 100%;
 }
 /* GENERAL */
 h1 {
@@ -24,21 +25,58 @@ p {
 }
 /* HEADER */
 header {
-  font-family: "M PLUS 1", sans-serif;
-  line-height: 25px;
-  margin-top: 0;
+    line-height: 15px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
-header p {
-    font-weight: 200;
+header h1 {
+    font-family: 'Hepta Slab';
+    letter-spacing: -10px;
+}
+#Event {
+    margin-top: 10%;
+    font-size: 16vw;
+    line-height: 1em;
+}
+#Series {
+    font-size: 10vw;
+    color: var(--dynamic-bg-color);
 }
 header a {
     text-decoration: none;
+    font-family: "Hepta Slab", serif;
     color: rgb(150, 150, 150);
     float: right;
     font-weight: 200;
+    cursor: help;
 }
 header a:hover {
     color: #19b904;
+}
+
+
+/* Time */
+#Update {
+    position: sticky;
+    top: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    color: var(--dynamic-bg-color);
+}
+#Date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+#Time {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    background-color: #f8f8f89d;
+    z-index: 10;
 }
 
 /* RATIO */
@@ -48,16 +86,33 @@ header a:hover {
     margin-top: -3%;
     z-index: 1;
 }
+#Ratio span {
+    display: flex;
+}
 #Ratio h1{
     font-size: 25vw;
     text-align: left;
     font-family: "Hepta Slab", serif;
     font-weight: 1;
 }
-#Ratio p {
+.unit {
+    display: block;
+    margin-top: 15%;
+    font-family: "Hepta Slab", serif;
+    cursor: help;
+}
+.texthover {
     position: absolute;
-    right: 5%;
-    bottom: 20%;
+    visibility: hidden;
+    width: fit-content;
+    transform: translateY(-1.3vh);
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+    transition: visibility 0.2s ease-in-out;
+}
+.unit:hover .texthover{
+    visibility: visible;
 }
 
 /* LEVEL */
@@ -67,34 +122,103 @@ nav {
     line-height: 50vh;
     z-index: 0;
 }
+nav h1 {
+    font-family: 'Hepta Slab';}
 
-/* CONTAINER */
-#Container {
-    margin: 0 auto;
-    width: 45%;
-    margin-top: 10vh;
-    aspect-ratio: 1/1.1;
-    border: solid 1px black;
-    background-color: #f8f8f89d;
-    z-index: 1;
+/* Key */
+.key {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 40%;
+    margin: 3% auto 0;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    border: 1px solid #19b904;
+    padding: 1rem 0 2rem;
 }
-#Container::after {
-    content: "";
+#one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: help;
+    gap: 0.5rem;
+}
+.texthover2 {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-5px);
-    background-color: #f8f8f8;
-    z-index: 1;
-    width: 35vw;
-    height: 2vh;
+    visibility: hidden;
+    width: 20%;
+    transform: translateX(5vw);
+    padding: 10px 0;
+    text-align: center;
+    transition: visibility 0.2s ease-in-out;
+}
+#one:hover .texthover2 {
+    visibility: visible;
+}
+#two {
+    width: 100%;
+    margin: 0;
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 200;
+}
+#two span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+    justify-content: center;
+}
+#line {
+    width: 40%;
+    height: 1px;
+    background-color: #19b904;
+    cursor: help;
+}
+.texthover3 {
+    position: absolute;
+    visibility: hidden;
+    width: 20%;
+    transform: translateX(-20vw) translateY(-3vh);
+    padding: 10px 0;
+    text-align: center;
+    transition: visibility 0.2s ease-in-out;
+}
+#line:hover .texthover3 {
+    visibility: visible;
+}
+#Color {
+    width: 100%;
+    margin: 0;
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 200;
+}
+#Color span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+    justify-content: center;
+}
+#pallete {
+    width: 20%;
+    height: 5px;
+    background: linear-gradient(to right, rgb(0, 232, 0), red);
 }
 
 /* ABOUT */
 #About {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 30vh auto;
+    width: 45%;
+    margin: 15% auto 0;
     text-align: center;
     gap: 2rem;
     background-color: #f8f8f89d;
@@ -105,12 +229,12 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    margin-top: 30vh;
+    gap: 0rem;
+    margin-top: 20vh;
 }
 .Events {
     width: 47%;
-    margin: 0 auto;
+    margin: 4% auto;
     text-align: center;
     border: solid 1px black;
     height: fit-content;
@@ -138,16 +262,41 @@ main {
 #End {
     margin: 10vh auto;
     text-align: center;
+    background-color: #f8f8f89d;
+    z-index: 1;
 }
 #End .Large {
     margin-left: 2%;
+}
+
+/* FALL DOWN */
+/* ------------------- */
+
+.fall {
+    width: 98%;
+    top: -10%;
+    left: 2%;
+    position: absolute;
+    pointer-events: none;
+}
+.line {
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    background-color: var(--dynamic-bg-color);
+    animation: fall 3s ease-in forwards;
+}
+@keyframes fall {
+    from {
+        top: 0;
+    }
 }
 
 
 @media screen and (max-width: 1050px){
 
     main {
-        gap: 1rem;
+        gap: 1.5rem;
     }
     .Events {
         width: 55%;
@@ -161,9 +310,6 @@ main {
 }
 @media screen and (max-width: 850px){
 
-    main {
-        gap: 1rem;
-    }
     .Events {
         width: 65%;
     }
@@ -182,18 +328,14 @@ main {
     }
     main {
         margin-top: 15vh;
-        gap: 1rem;
     }
     .Events {
         width: 70%;
+        margin: 6% auto;
     }
 }
 @media screen and (max-width: 630px){
 
-    main {
-        margin-top: 15vh;
-        gap: 1rem;
-    }
     .Events {
         width: 80%;
     }
@@ -203,10 +345,6 @@ main {
 }
 @media screen and (max-width: 570px){
 
-    main {
-        margin-top: 15vh;
-        gap: 1rem;
-    }
     .Events {
         width: 90%;
     }
@@ -232,7 +370,7 @@ main {
         font-weight: 200;
     }
     nav {
-        margin-top: 38vh;
+        margin-top: 82vh;
         line-height: 30vh;
     }
     header a {
@@ -244,11 +382,6 @@ main {
     #Ratio h1{
         font-size: 35vw;
         font-weight: 100;
-    }
-    #Ratio p {
-        right: 8%;
-        bottom: 15%;
-        background-color: #f8f8f89d;
     }
     #Container {
         margin-top: 8vh;
@@ -277,5 +410,8 @@ main {
     .Events p {
         width: 75%;
         margin: 0 auto;
+    }
+    .unit:hover .texthover {
+        visibility: hidden;
     }
 }

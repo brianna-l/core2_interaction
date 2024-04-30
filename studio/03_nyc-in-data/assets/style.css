@@ -119,11 +119,31 @@ header a:hover {
 nav {
     position: absolute;
     margin-top: 50vh;
-    line-height: 50vh;
-    z-index: 0;
+    line-height: 120vh;
+    z-index: 100;
 }
-nav h1 {
-    font-family: 'Hepta Slab';}
+.level {
+    font-family: 'Hepta Slab';
+    font-weight: 100;
+    font-size: 2em;
+    display: flex;
+    cursor: help;
+}
+.texthover4 {
+    position: absolute;
+    visibility: hidden;
+    width: 75%;
+    transform: translateY(63vh);
+    padding: 10px 10px;
+    font-size: 2vw;
+    font-weight: 300;
+    text-align: left;
+    transition: visibility 0.2s ease-in-out;
+    line-height: 3vh;
+}
+.level:hover .texthover4 {
+    visibility: visible;
+}
 
 /* Key */
 .key {

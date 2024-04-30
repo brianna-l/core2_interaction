@@ -1,0 +1,266 @@
+html {
+    margin: 0;
+    max-width: 100%;
+    background-color: antiquewhite;
+}
+body {
+    margin: 0;
+    font-family: "Noto Sans Thai Looped", sans-serif;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+.panel {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+#panel2 {
+    left: 100%;
+}
+#panel3 {
+    left: 200%;
+    width: 180%;
+    z-index: 2;
+}
+#panel4 {
+    left: 380%;
+    width: 180%;
+}
+.next {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: ew-resize;
+    z-index: 2;
+}
+.back {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    cursor: ew-resize;
+    z-index: 2;
+}
+#click1 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    cursor: ew-resize;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+#click2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    cursor: ew-resize;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+}
+#click3 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    cursor: ew-resize;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+}
+.course {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+
+@keyframes light {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 400%;
+    }
+}
+/* Panel 1 */
+/* ---------------- */
+
+.floor {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background-color: #b1a69b;
+    z-index: 0;
+}
+
+.top {
+    position: absolute;
+    left: 2%;
+    top: 8%;
+}
+.top p {
+    font-size: 13vh;
+    color: #3f3f3f;
+    font-weight: 200;
+}
+
+.sub {
+    position: absolute;
+    left: 2%;
+    top: 42%;
+    font-weight: 300;
+}
+
+.time {
+    position: absolute;
+    right: 5%;
+    top: 42%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    gap: 1rem;
+}
+.Date, .Time {
+    display: flex;
+}
+
+.bottom {
+    position: absolute;
+    left: 3.5%;
+    bottom: 10%;
+}
+.bottom p {
+    font-size: 13vh;
+    color: #5E5755;
+    transform: rotate(180deg) skew(20deg);
+}
+
+
+
+/* Panel 2 */
+/* ---------------- */
+
+.top2 {
+    position: absolute;
+    left: 35%;
+    top: 8%;
+}
+.top2 p {
+    font-size: 13vh;
+    color: #3f3f3f;
+    font-weight: 200;
+}
+.bottom2 {
+    position: absolute;
+    left: 44%;
+    bottom: 10%;
+}
+.bottom2 p {
+    font-size: 13vh;
+    color: #5E5755;
+    transform: rotate(180deg) skew(20deg);
+    font-weight: 200;
+}
+
+
+/* Panel 3 */
+/* ---------------- */
+.roof {
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    top: -5%;
+    left: 42.9%;
+    background-color: #4d4747;
+    transform: skew(-40deg);
+}
+.hor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hor div {
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+}
+.wall {
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    top: 20%;
+    left: 38%;
+    background-color: #756c6c;
+}
+.shadow {
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    bottom: 25%;
+    left: 42.9%;
+    background-color: #978c86;
+    transform: rotate(180deg) skew(40deg);
+}
+.picblock {
+    width: 95%;
+    height: 60%;
+    margin: 5% auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.window {
+    width: 25%;
+    height: 100%;
+    background-color:antiquewhite;
+    opacity: 0.5;
+    border: 1px solid antiquewhite;
+    transition: 1s ease-in-out;
+}
+.window img {
+    width: 100%;
+    height: 100%;
+}
+.window:hover {
+    opacity: 1;
+}
+.view {
+    width: 8%;
+    height: 50%;
+    background-color: antiquewhite;
+}
+.picblock2 {
+    width: 95%;
+    height: 40%;
+    margin: 8% auto auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    align-items: center;
+}

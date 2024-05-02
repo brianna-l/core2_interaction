@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 5% 5% 10%;
-    border: solid 1px #19b904;
+    border: solid 1px var(--dynamic-bg-color);
     background-color: #f8f8f8;
     height: 100%;
 }
@@ -20,7 +20,7 @@ p {
     font-weight: 200;
 }
 #Green {
-    color: #19b904;
+    color: var(--dynamic-bg-color);
     font-weight: 300;
 }
 /* HEADER */
@@ -52,7 +52,7 @@ header a {
     cursor: help;
 }
 header a:hover {
-    color: #19b904;
+    color: var(--dynamic-bg-color);
 }
 
 
@@ -390,14 +390,27 @@ main {
         font-weight: 200;
     }
     nav {
-        margin-top: 82vh;
-        line-height: 30vh;
+        margin-top: 70vh;
+        line-height: 90vh;
+        animation: appear 8s infinite;
+    }
+    @keyframes appear {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    header h1 {
+        letter-spacing: -3px;
     }
     header a {
-        color: #19b904;
-        float: none;
-        font-weight: 300;
-        margin-top: -10px;
+        font-weight: 200;
+        margin-top: 0px;
     }
     #Ratio h1{
         font-size: 35vw;
@@ -408,6 +421,9 @@ main {
     }
     #Container::after {
         width: 35vw;
+    }
+    .key {
+        width: 90%;
     }
     #About {
         width: 100%;

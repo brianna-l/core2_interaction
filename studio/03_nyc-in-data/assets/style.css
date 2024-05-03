@@ -3,6 +3,7 @@ html {
 }
 body {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 5% 5% 10%;
     border: solid 1px var(--dynamic-bg-color);
@@ -294,6 +295,7 @@ main {
 
 .fall {
     width: 98%;
+    height: 100%;
     top: -10%;
     left: 2%;
     position: absolute;

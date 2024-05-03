@@ -6,6 +6,11 @@ html {
 body {
 	user-select: none;
 	color: #1e1e1e;
+	background-color: white;
+}
+.body-hovered {
+	background-color: #1e1e1e;
+	color: #f2f2f2;
 }
 
 
@@ -35,12 +40,11 @@ button {
 	border-radius: 0;
 	border: 1px solid #1e1e1e82;
 	transition: all 0.5s;
+	cursor: grabbing;
 }
-button:hover {
+.button-hovered {
 	background-color: #1e1e1e;
 	color: #f2f2f2;
-	font-weight: 100;
-	cursor: crosshair;
 }
 nav {
 	z-index: 999;
@@ -55,7 +59,7 @@ nav {
 	padding: 2px 6px;
 	transition: all 0.5s;
 }
-#title:hover {
+#title:hover{
 	background-color: #1e1e1e;
 	color: #f2f2f2;
 	font-weight: 100;
@@ -67,6 +71,7 @@ nav {
 	text-align: justify;
 	width: fit-content;
 	height: fit-content;
+	cursor: grabbing;
 }
 #about a {
 	position: absolute;
@@ -75,11 +80,9 @@ nav {
 	padding: 0 5px;
 	transition: all 0.5s;
 }
-#about a:hover {
-	background-color: #1e1e1e;
-	color: #f2f2f2;
-	font-weight: 100;
-	cursor: crosshair;
+.about-a-hovered {
+	background-color: #1e1e1e; 
+	color: #f2f2f2; 
 }
 
 /* content */
@@ -125,7 +128,30 @@ img {
 	text-align: center;
 	padding: 0 0;
 }
-
+@media only screen and (max-width: 1000px){
+	#title {
+		left:2%;
+	}
+	#adjust {
+		top: 26%;
+		right: 4%;
+	}
+	#title {
+		font-size: 14.5vw;
+	}
+	#about a {
+		width: fit-content;
+		top: 26%;
+		left: 2%;
+		right: none;
+		border: none;
+	}
+	.space {
+		margin: 50% auto;
+		margin-bottom: 15%;
+		justify-content: space-between;
+	}
+}
 @media only screen and (max-width: 600px){
 	#title {
 		left:2.5%;

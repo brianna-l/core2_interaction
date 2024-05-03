@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateFallHeight() {
         const bodyHeight = body.offsetHeight;
-        main.style.height = `${bodyHeight}px`;
+        main.style.height = `${bodyHeight}`;
     }
     
     updateFallHeight();
@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const randomRotation = Math.random() * 20 - 10;
         const randomLeft = Math.random() * 50;
 
-        line.style.top = `${Math.random() * 100 - 100}%`;
         line.style.left = `${randomLeft}%`;
         line.style.animationDuration = `${10 - (i * 0.2)}s`;
         line.style.animationDelay = `${i * 0.5}s`;

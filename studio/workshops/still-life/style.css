@@ -5,25 +5,6 @@
   means you'll need to use percentages when positioning and sizingelements within
   your frame.
 */
-a{
-  cursor: grab;
-}
-nav{
-  z-index: 999;
-  position: fixed;
-  width: 5vh;
-  aspect-ratio: 1/1;
-  background-color: rgb(50, 150, 209);
-  border: 3px solid beige;
-  top: 0;
-  left: 0;
-}
-.button{
-  background-color: rgb(233, 223, 93);
-  width: 2vh;
-  aspect-ratio: 1/1;
-  margin: 27% auto;
-}
 
 body {
   background-color: rgb(242, 238, 221);
@@ -34,6 +15,7 @@ body {
   height: 63vw;
   background: rgb(244, 108, 45);
   margin: 2.5vw auto;
+  margin-top: 10%;
   position: relative;
 }
 

@@ -14,9 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
-
-
   
 
 
@@ -66,3 +63,39 @@ setInterval(() => {
     secondsElement.innerHTML = seconds;
 
 }, 1000);
+
+
+
+
+// MODAL
+// ------------------------
+
+function openModal(modalId, event) {
+  document.getElementById(modalId).style.display = 'block';
+  event.stopPropagation();
+}
+
+function closeModal(modalId, event) {
+  if (event.target === document.getElementById(modalId)) {
+      document.getElementById(modalId).style.display = 'none';
+  }
+  event.stopPropagation();
+}
+
+
+
+// Switch
+// --------------------------
+
+document.addEventListener('DOMContentLoaded', function () {
+  var date = new Date();
+  var hour = date.getHours();
+  console.log("Current hour:", hour);
+
+  if (hour >= 18 || hour < 6) {
+      console.log("Applying dark mode");
+      document.body.classList.add('dark-mode');
+  } else {
+      console.log("It's not time for dark mode");
+  }
+});

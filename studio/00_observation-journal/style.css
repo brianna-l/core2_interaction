@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: rgb(231, 166, 87);
 }
 a {
     text-decoration: none;
@@ -11,7 +12,7 @@ text {
     display: inline-flex;
     gap: 1rem;
     align-items: baseline;
-    margin: 6vh auto;
+    margin: 1vh auto;
 }
 
 iframe {

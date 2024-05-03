@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- 1 -->
     <section class="panel" id="panel1">
         <a class="next" href="#panel2"></a>
         <div class="floor"></div>
@@ -39,38 +41,98 @@
         <header class="bottom2"><p>LAB</p></header>
     </section>
     <!-- 3 -->
-    <section class="panel" id="panel3">
+    <section class="panel" id="panel3" onclick="closeModal('board')">
         <a class="back" id="click3" href="#panel2"></a>
+        <a class="next" id="click4" href="#pic1"></a>
+        <a class="next" id="click5" href="#panel4"></a>
         <div class="floor"></div>
-        <div class="roof">
-            <div class="hor">
-                <div></div>
-                <div></div>
+        <div class="house">
+            <div class="roof">
             </div>
-            <div class="ver"></div>
-        </div>
-        <div class="wall">
-            <div class="picblock">
-                <div class="window"><img src="media/Arena.png" alt="Project 1"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/P1.png" alt="Project 2"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/Collection.png" alt="Project 3"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/Earth.png" alt="Project 4"></div>
-        </div>
-            
-        </div>
-        <div class="shadow">
-            <div class="picblock2">
-                <div class="window"><img src="media/StoryStyle.png" alt="Workshop 1"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/stillLife.png" alt="Workshop 2"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/Alt.png" alt="Workshop 3"></div>
-                <div class="view"></div>
-                <div class="window"></div>
-        </div>
+            <div class="wall">
+                <div class="picblock" id="pic1">
+                    <div class="window" id="window1" onclick="openModal('modalContainer1', event)">
+                        <img src="media/Arena.png" alt="Project 1">
+                        <div class="title">observational journal</div>
+                    </div>
+                    <div id="modalContainer1" class="modal-container" onclick="closeModal('modalContainer1', event)">
+                        <div id="board1" class="board" onclick="event.stopPropagation()">
+                            <iframe src="studio/00_observation-journal/00_observation-journal.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="window" id="window2" onclick="openModal('modalContainer2', event)">
+                        <img src="media/P1.png" alt="Project 2">
+                        <div class="title">story as network</div>
+                    </div>
+                    <div id="modalContainer2" class="modal-container" onclick="closeModal('modalContainer2', event)">
+                        <div id="board2" class="board" onclick="event.stopPropagation()">
+                            <iframe src="studio/01_stories_as_network/part4/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="view"></div>
+                    <div class="window" id="window3" onclick="openModal('modalContainer3', event)">
+                        <img src="media/Collection.png" alt="Project 3">
+                        <div class="title">elastic collection</div>
+                    </div>
+                    <div id="modalContainer3" class="modal-container" onclick="closeModal('modalContainer3', event)">
+                        <div id="board3" class="board" onclick="event.stopPropagation()">
+                            <iframe src="studio/02_elastic-collection/part_8/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="window" id="window4" onclick="openModal('modalContainer4', event)">
+                        <img src="media/Earth.png" alt="Project 4">
+                        <div class="title">NYC data</div>
+                    </div>
+                    <div id="modalContainer4" class="modal-container" onclick="closeModal('modalContainer4', event)">
+                        <div id="board4" class="board" onclick="event.stopPropagation()">
+                            <iframe src="studio/03_nyc-in-data/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="view"></div>
+            </div>
+                
+            </div>
+            <div class="shadow">
+                <div class="picblock2">
+                    <div class="window" id="window5" onclick="openModal('modalContainer5', event)">
+                        <img src="media/StoryStyle.png" alt="Workshop 1">
+                        <div class="title2">story style</div>
+                    </div>
+                    <div id="modalContainer5" class="modal-container" onclick="closeModal('modalContainer5', event)">
+                        <div id="board5" class="board" onclick="event.stopPropagation()">
+                            <iframe src="studio/workshops/art_of_title/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="window" id="window6" onclick="openModal('modalContainer6', event)">
+                        <img src="media/stillLife.png" alt="Workshop 2">
+                        <div class="title2">still life</div>
+                    </div>
+                    <div id="modalContainer6" class="modal-container" onclick="closeModal('modalContainer6', event)">
+                        <div id="board6" class="board" onclick="event.stopPropagation()">
+                            <iframe src="studio/workshops/still-life/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="view"></div>
+                    <div class="window" id="window7" onclick="openModal('modalContainer7', event)">
+                        <img src="media/Alt.png" alt="Workshop 3">
+                        <div class="title2">alt text</div>
+                    </div>
+                    <div id="modalContainer7" class="modal-container" onclick="closeModal('modalContainer7', event)">
+                        <div id="board7" class="board" onclick="event.stopPropagation()">
+                            <iframe src="studio/workshops/alt/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="window" id="window8"></div>
+                    <div class="view"></div>
+            </div>
+            </div>
         </div>
         <header class="top"><p>PROJECT</p></header>
         <header class="bottom"><p>WORKSHOP</p></header>
@@ -78,34 +140,37 @@
     <!-- 4 -->
     <section class="panel" id="panel4">
         <a class="course" href="#panel2"></a>
+        <a class="next" id="click4" href="#pic2"></a>
+        <a class="next" id="click5" href="#panel1"></a>
         <div class="floor"></div>
-        <div class="roof"></div>
-        <div class="wall">
-            <div class="picblock">
-                <div class="window"><img src="media/Intro.png" alt="Project 1"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/Story.png" alt="Project 2"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/collect.png" alt="Project 3"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/collect.png" alt="Project 3"></div>
-        </div>
-            
-        </div>
-        <div class="shadow">
-            <div class="picblock2">
-                <div class="window"><img src="media/grid.png" alt="Workshop 1"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/kirby.png" alt="Workshop 2"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/clock.png" alt="Workshop 3"></div>
-                <div class="view"></div>
-                <div class="window"><img src="media/clock.png" alt="Workshop 3"></div>
-        </div>
+        <div class="house">
+            <div class="roof"></div>
+            <div class="wall">
+                <div class="picblock" id="pic2">
+                    <div class="window"><img src="media/Intro.png" alt="Project 1"></div>
+                    <div class="view"></div>
+                    <div class="window"><img src="media/Story.png" alt="Project 2"></div>
+                    <div class="window"><img src="media/collect.png" alt="Project 3"></div>
+                    <div class="view"></div>
+                    <div class="window" id="window8"></div>
+            </div>
+                
+            </div>
+            <div class="shadow">
+                <div class="picblock2">
+                    <div class="window"><img src="media/grid.png" alt="Workshop 1"></div>
+                    <div class="view"></div>
+                    <div class="window"><img src="media/kirby.png" alt="Workshop 2"></div>
+                    <div class="window"><img src="media/clock.png" alt="Workshop 3"></div>
+                    <div class="view"></div>
+                    <div class="window"><img src="media/clock.png" alt="Workshop 3"></div>
+            </div>
+            </div>
         </div>
         <header class="top"><p>PROJECT</p></header>
         <header class="bottom"><p>WORKSHOP</p></header>
     </section>
+
 
     <script src="catalogue2.js"></script>
 </body>

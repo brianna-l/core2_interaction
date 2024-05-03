@@ -50,3 +50,27 @@ var mainElement = document.querySelector('.space');
         space.forEach((space) => {
             insertSpaceData(space);
         });
+
+
+// body hover
+document.addEventListener("DOMContentLoaded", function() {
+    var title = document.getElementById('title');
+    var body = document.body;
+    var aboutLinks = document.querySelectorAll('#about a');
+    var buttons = document.querySelectorAll('button');
+
+    title.addEventListener('click', function() {
+        // Toggle class on body
+        body.classList.toggle('body-hovered');
+
+        // Toggle class on each #about a
+        aboutLinks.forEach(function(link) {
+            link.classList.toggle('about-a-hovered');
+        });
+
+        // Toggle class on each button
+        buttons.forEach(function(button) {
+            button.classList.toggle('button-hovered');
+        });
+    });
+});

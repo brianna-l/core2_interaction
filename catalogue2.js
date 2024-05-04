@@ -92,10 +92,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var hour = date.getHours();
   console.log("Current hour:", hour);
 
-  if (hour >= 18 || hour < 6) {
+  if (hour >= 18 && hour < 21) {
+      console.log("Applying noon mode");
+      document.body.classList.add('noon-mode');
+  } else if (hour >= 21) {
       console.log("Applying dark mode");
       document.body.classList.add('dark-mode');
   } else {
-      console.log("It's not time for dark mode");
+      console.log("It's not time for noon mode");
   }
 });

@@ -17,31 +17,69 @@ body {
     overflow-y: hidden;
 }
 
-/* COLOR CHANGE */
+/* COLOR NOON */
+body.noon-mode .panel {
+    background: linear-gradient(#f61414, #d03333);
+}
+body.noon-mode .floor {
+    background: linear-gradient(#fe483b, #ffce0c) ;
+}
+body.noon-mode .top p, body.noon-mode .top2 p {
+    color: #ffce0c;
+}
+body.noon-mode .bottom p, body.noon-mode .bottom2 p {
+    color: #d03333;
+}
+body.noon-mode .roof {
+    background-image: repeating-linear-gradient(315deg, #ffce0ca0, #d03333 3px, transparent -19px, transparent 5px);
+}
+body.noon-mode .wall {
+    background-image: repeating-linear-gradient(-45deg, #d03333, #d03333 2px, #ffce0c 1px, transparent 6px);
+}
+body.noon-mode .shadow {
+    background-image: repeating-linear-gradient(0deg, #d03333, #ffce0c 1px, #d03333 1px, #d03333 4px);
+}
+body.noon-mode .title, body.noon-mode .title2 {
+    font-weight: 700;
+    color: #d03333;
+}
+body.noon-mode .time, body.noon-mode .sub {
+    color: #ffce0c;
+}
+/* COLOR DARK */
 body.dark-mode .panel {
-    background-color: #333;
+    background: linear-gradient(#333, #0e3dcd) ;
 }
 body.dark-mode .floor {
-    background-color: #ffce0c;
+    background-color: #2b55e0;
 }
 body.dark-mode .top p, body.dark-mode .top2 p {
-    color: #ffce0c;
+    color: #587ffe;
 }
 body.dark-mode .bottom p, body.dark-mode .bottom2 p {
     color: #333;
 }
 body.dark-mode .roof {
-    background-image: repeating-linear-gradient(315deg, #ffce0ca0, #333 3px, transparent -19px, transparent 5px);
+    background-image: repeating-linear-gradient(315deg, #2b55e0, #333 3px, transparent -19px, transparent 5px);
 }
 body.dark-mode .wall {
-    background-image: repeating-linear-gradient(-45deg, #333, #333 2px, #ffce0c 1px, transparent 6px);
+    background-image: repeating-linear-gradient(-45deg, #333, #333 2px, #2b55e0 1px, transparent 6px);
 }
 body.dark-mode .shadow {
-    background-image: repeating-linear-gradient(0deg, #333, #ffce0c 1px, #333 1px, #333 4px);
+    background-image: repeating-linear-gradient(0deg, #333, #2b55e0 1px, #333 1px, #333 4px);
 }
 body.dark-mode .title, body.dark-mode .title2 {
     font-weight: 700;
     color: #333;
+}
+body.dark-mode .time, body.dark-mode .sub {
+    color: #2b55e0;
+}
+body.dark-mode .view {
+    background-color: #333;
+}
+body.dark-mode .shadow .view {
+    background-color: #2b55e0;
 }
 
 /* PANELS */

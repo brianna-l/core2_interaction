@@ -46,6 +46,12 @@ body.noon-mode .title, body.noon-mode .title2 {
 body.noon-mode .time, body.noon-mode .sub {
     color: #ffce0c;
 }
+body.noon-mode .view {
+    background-color: #d03333;
+}
+body.noon-mode .shadow .view {
+    background-color: #ffce0c;
+}
 /* COLOR DARK */
 body.dark-mode .panel {
     background: linear-gradient(#333, #0e3dcd) ;

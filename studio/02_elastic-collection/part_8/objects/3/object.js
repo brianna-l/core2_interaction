@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     div.style.backgroundImage = "url('" + images[currentIndex] + "')";
   });
 
-  shuffle.addEventListener('click', function() {
+  clickableDiv.addEventListener('click', function() {
     var randomIndex = Math.floor(Math.random() * images.length);
     while(randomIndex === currentIndex) {
       randomIndex = Math.floor(Math.random() * images.length);

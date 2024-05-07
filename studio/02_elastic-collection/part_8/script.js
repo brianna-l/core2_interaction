@@ -38,9 +38,6 @@ var mainElement = document.querySelector('.space');
 
             var img = document.createElement('img');
             img.src = "/studio/02_elastic-collection/media/" + space['image'];
-            img.addEventListener('mouseover', function () {
-                displayDetails(space['title']);
-            });
 
             anchor.appendChild(img);
             article.appendChild(anchor);
@@ -60,15 +57,20 @@ document.addEventListener("DOMContentLoaded", function() {
     var buttons = document.querySelectorAll('button');
 
     title.addEventListener('click', function() {
-        // Toggle class on body
+        // Toggle body
         body.classList.toggle('body-hovered');
 
-        // Toggle class on each #about a
+        // Toggle title
         aboutLinks.forEach(function(link) {
-            link.classList.toggle('about-a-hovered');
+            link.classList.toggle('title-hovered');
         });
 
-        // Toggle class on each button
+        // Toggle #about a
+        aboutLinks.forEach(function(link) {
+            link.classList.toggle('about-hovered');
+        });
+
+        // Toggle button
         buttons.forEach(function(button) {
             button.classList.toggle('button-hovered');
         });

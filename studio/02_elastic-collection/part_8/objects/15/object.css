@@ -2,17 +2,18 @@
 html {
 	font-family: sans-serif;
 	cursor: crosshair;
+    background-color: #0f0f0f;
 }
 body {
+    position: relative;
 	user-select: none;
 	color: #1e1e1e;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 
 /* nav */
 a {
 	text-decoration: none;
-	color: #1e1e1e;
 }
 #title {
 	position: fixed;
@@ -21,51 +22,19 @@ a {
 	font-family: "Lexend", sans-serif;
 	font-size: 40px;
 	font-weight: 100;
-	padding: 2px 6px;
-	border: 1px solid #1e1e1e;
     transition: all 0.5s ease;
+    cursor: crosshair;
+    opacity: 0.3;
+    color: white;
+    mix-blend-mode: difference;
 }
 #title:hover {
-	background-color: #1e1e1e;
-    color: white;
-	font-weight: 100;
-	cursor: crosshair;
+    opacity: 1;
 }
 .inverted {
     color: white;
 }
 
-#shuffle {
-    z-index: 999;
-    position: fixed;
-    top: 40%;
-    right: 5%;
-    width: 60px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    opacity: 50%;
-    animation: show 5s infinite;
-}
-@keyframes show{
-    0%{
-        border: 1px solid transparent;
-        background-color: transparent;
-    }
-    30%{
-        border: 1px solid #1e1e1e;
-        background-color: transparent;
-    }
-    60%{
-        border: 1px solid white;
-        background-color: transparent;
-    }
-    100%{
-        border: 1px solid transparent;
-        background-color: transparent;
-    }
-}
 
 /* text */
 article {
@@ -105,6 +74,7 @@ article div {
 	cursor: crosshair;
     filter:invert(1);
     mix-blend-mode: difference;
+    z-index: 100;
 }
 #back {
     width: 55px;
@@ -113,15 +83,16 @@ article div {
     background-size: contain;
     background-repeat: no-repeat;
     position: fixed;
-    right: 10%;
+    left: 3%;
     bottom: 6%;
     opacity: 20%;
 	cursor: crosshair;
     filter:invert(1);
     mix-blend-mode: difference;
+    z-index: 100;
 }
 #next:hover, #back:hover {
-    transition: all 0.3s;
+    transition: all 0.5s ease-in;
     opacity: 1;
 }
 
@@ -130,40 +101,42 @@ article div {
 .clickable-div {
     z-index: -1;
     position: fixed;
-    right: 0;
-    margin-top: 10%;
-    width: 100%;
-    height: 100%;
+    right: 5%;
+    top: 5%;
+    width: 63%;
+    height: 90%;
     background-image: url(/studio/02_elastic-collection/media/15-.png);
-    background-size: contain;
+    background-size:cover;
+    background-position: right;
     background-repeat: no-repeat;
     transition: all 0.5s ease;
+    cursor:help;
 }
-
 
 @media only screen and (max-width: 600px){
     body {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin: 0;
+    }
+    #title {
+        opacity: 1;
+    }
+    .Content {
+        font-size: 30px;
+    }
+    article div {
+        line-height: 5px;
     }
     article {
         left: 3%;
-        bottom: 1%;
-        font-size: 20px;
+        top: 62%;
+        gap: 0;
     }
     .clickable-div {
         z-index: 1;
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 33vh;
-        margin: 40% 0 0 0;
-        padding: 0;
-        background-size: contain;
-        right: 0;
-        top: 0;
+        height: 40vh;
+        margin: 15% auto;
     }
     #click {
         z-index: 2;
@@ -171,17 +144,14 @@ article div {
         left: 3%;
         bottom: 52%;
     }
-    #shuffle {
-        left: 6%;
-        top: 34%;
-    }
     #back {
-        bottom: 12%;
-        right: 3%;
+        bottom: 14%;
+        left: 83.5%;
         opacity: 60%;
     }
     #next {
         bottom: 3%;
+        right: 0.5%;
         opacity: 60%;
     }
 }

@@ -2,7 +2,7 @@ body {
     background-color: white;
 }
 .heading {
-    margin-top: 16%;
+    margin-top: 12%;
     text-align: center;
 	font-family: "Lexend", sans-serif;
 	font-size: 8.5em;
@@ -12,7 +12,7 @@ body {
 
 .paragraph {
     text-align: justify;
-    width: 85%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -26,12 +26,13 @@ body {
 
 .back {
     margin: 7% auto;
-    width: 100px;
+    width: 50px;
     aspect-ratio: 1/1;
     border: 1px solid black;
     border-radius: 50%;
     animation: shine 3s infinite;
     opacity: 1;
+    cursor: grabbing;
 }
 
 @keyframes shine {
@@ -46,15 +47,16 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .heading {
-        margin-top: 45%;
-        font-size: 5em;
+        font-size: 7em;
     }
-    .paragraph p {
+}
+@media only screen and (max-width: 550px){
+    .heading {
+        font-size: 5.5em;
+    }
+    .paragraph {
         width: 80%;
-    }
-    .back {
-        margin: 20% auto;
     }
 }

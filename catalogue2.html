@@ -13,10 +13,13 @@
 
     <!-- 1 -->
     <section class="panel" id="panel1">
+        <!-- Scroll points -->
         <a class="next" href="#panel2"></a>
+        <!-- Content -->
         <div class="floor"></div>
         <header class="top"><p>INTERACTION</p></header>
         <div class="sub">2024 - Spring</div>
+        <!-- Time -->
         <div class="time">
             <div class="Date">
                 <div class="Year"></div>/
@@ -31,71 +34,111 @@
         </div>
         <header class="bottom"><p>Brianna Lou</p></header>
     </section>
+
     <!-- 2 -->
     <section class="panel" id="panel2">
+        <!-- Scroll points -->
         <a class="back" href="#panel1"></a>
         <a class="next" id="click1" href="#panel3"></a>
         <a class="next" id="click2" href="#panel4"></a>
+        <!-- Content -->
         <div class="floor"></div>
         <header class="top2"><p>STUDIO</p></header>
         <header class="bottom2"><p>LAB</p></header>
     </section>
+
     <!-- 3 -->
     <section class="panel" id="panel3" onclick="closeModal('board')">
+        <!-- Scroll points -->
         <a class="back" id="click3" href="#panel2"></a>
         <a class="next" id="click4" href="#pic1"></a>
         <a class="next" id="click5" href="#panel4"></a>
         <div class="floor"></div>
+        <!-- WORKS -->
         <div class="house">
             <div class="roof">
             </div>
+            <!-- TOP -->
             <div class="wall">
                 <div class="picblock" id="pic1">
+                    <!-- 1 -->
                     <div class="window" id="window1" onclick="openModal('modalContainer1', event)">
                         <img src="media/Arena.png" alt="Project 1">
                         <div class="title">observational journal</div>
                     </div>
                     <div id="modalContainer1" class="modal-container" onclick="closeModal('modalContainer1', event)">
                         <div id="board1" class="board" onclick="event.stopPropagation()">
-                            <iframe src="studio/00_observation-journal/00_observation-journal.html" frameborder="0" width="100%" height="100%"></iframe>
                             <div class="open"></div>
+                            <div class="contentbox">
+                            <h1>Observational Journal</h1>
+                            <p>Photos documented through the semester. The motivations behind taking these photos are mainly due to a sense of comfort I felt at those moments. Reflecting on what I have, they share values like lighting, structures, and perspectives.</p>
+                            <a href="https://www.are.na/brianna-lou/brianna-s-obsdairy" id="view1">view</a>
+                            <iframe src="studio/00_observation-journal/00_observation-journal.html" width="40%" height="400px"></iframe>
+                            </div>
                         </div>
                     </div>
+                    <!-- 2 -->
                     <div class="window" id="window2" onclick="openModal('modalContainer2', event)">
                         <img src="media/P1.png" alt="Project 2">
                         <div class="title">story as network</div>
                     </div>
                     <div id="modalContainer2" class="modal-container" onclick="closeModal('modalContainer2', event)">
                         <div id="board2" class="board" onclick="event.stopPropagation()">
-                            <iframe src="studio/01_stories_as_network/part4/index.html" frameborder="0" width="100%" height="100%"></iframe>
                             <div class="open"></div>
+                            <div class="contentbox">
+                            <h1>Story as Network</h1>
+                            <p>An immersive visual experience for the passage <i>In Praise of Shadows</i> by Jun'ichiro Tanizaki. Focusing on creating light and shadow with the line "delicate glow of fading rays clinging to the surface of dusty walls."</p>
+                            <a href="studio/01_stories_as_network/part4/index.html">view</a>
+                            <video width="195px" height="400px" autoplay loop><source src="media/ph1.mp4" type="video/mp4"></video>
+                            <video width="600px" height="400px" autoplay loop>
+                                <source src="media/dk2.mp4" type="video/mp4">
+                            </video>
+                            </div>
                         </div>
                     </div>
                     <div class="view"></div>
+                    <!-- 3 -->
                     <div class="window" id="window3" onclick="openModal('modalContainer3', event)">
                         <img src="media/Collection.png" alt="Project 3">
                         <div class="title">elastic collection</div>
                     </div>
                     <div id="modalContainer3" class="modal-container" onclick="closeModal('modalContainer3', event)">
                         <div id="board3" class="board" onclick="event.stopPropagation()">
-                            <iframe src="studio/02_elastic-collection/part_8/index.html" frameborder="0" width="100%" height="100%"></iframe>
                             <div class="open"></div>
+                            <div class="contentbox">
+                            <h1>Inside Out</h1>
+                            <p>This is a collection of spaces in NYC and Dali, China. These photos I took all share the concept of "two existing worlds," which you can imagine there is a parallel space inside these bordered portions of the real world.</p>
+                            <a href="studio/02_elastic-collection/part_8/index.html">view</a>
+                            <video width="195px" height="400px" autoplay loop><source src="media/ph1.mp4" type="video/mp4"></video>
+                            <video width="600px" height="400px" autoplay loop>
+                                <source src="media/dk1.mp4" type="video/mp4">
+                            </video>
+                            </div>
                         </div>
                     </div>
+                    <!-- 4 -->
                     <div class="window" id="window4" onclick="openModal('modalContainer4', event)">
                         <img src="media/Earth.png" alt="Project 4">
                         <div class="title">NYC data</div>
                     </div>
                     <div id="modalContainer4" class="modal-container" onclick="closeModal('modalContainer4', event)">
                         <div id="board4" class="board" onclick="event.stopPropagation()">
-                            <iframe src="studio/03_nyc-in-data/index.html" frameborder="0" width="100%" height="100%"></iframe>
                             <div class="open"></div>
+                            <div class="contentbox">
+                            <h1>NYC Data</h1>
+                            <p>A site for New York City Spring cleanup event series. Using pollution API to connect uncollected trash on the streets with the result of producing pm2.5 (one type of particles related to pollution level).</p>
+                            <a href="studio/03_nyc-in-data/index.html">view</a>
+                            <video width="195px" height="400px" autoplay loop><source src="media/ph3.mp4" type="video/mp4"></video>
+                            <video width="600px" height="400px" autoplay loop>
+                                <source src="media/dk3.mp4" type="video/mp4">
+                            </video>
+                            </div>
                         </div>
                     </div>
                     <div class="view"></div>
+                </div>
             </div>
-                
-            </div>
+            <!-- BOTTOM -->
             <div class="shadow">
                 <div class="picblock2">
                     <div class="window" id="window5" onclick="openModal('modalContainer5', event)">
@@ -137,33 +180,110 @@
         <header class="top"><p>PROJECT</p></header>
         <header class="bottom"><p>WORKSHOP</p></header>
     </section>
+
     <!-- 4 -->
     <section class="panel" id="panel4">
+        <!-- Scroll points -->
         <a class="course" href="#panel2"></a>
         <a class="next" id="click4" href="#pic2"></a>
         <a class="next" id="click5" href="#panel1"></a>
         <div class="floor"></div>
+        <!-- WORKS -->
         <div class="house">
             <div class="roof"></div>
+            <!-- TOP -->
             <div class="wall">
                 <div class="picblock" id="pic2">
-                    <div class="window"><img src="media/Intro.png" alt="Project 1"></div>
+                    <div class="window" id="window9" onclick="openModal('modalContainer9', event)">
+                        <img src="media/Intro.png" alt="Project 1">
+                        <div class="title">introduction webring</div>
+                    </div>
+                    <div id="modalContainer9" class="modal-container" onclick="closeModal('modalContainer9', event)">
+                        <div id="board9" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/01_introduction/01_introduction.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
                     <div class="view"></div>
-                    <div class="window"><img src="media/Story.png" alt="Project 2"></div>
-                    <div class="window"><img src="media/collect.png" alt="Project 3"></div>
+                    <div class="window" id="window10" onclick="openModal('modalContainer10', event)">
+                        <img src="media/Story.png" alt="Project 2">
+                        <div class="title">story style</div>
+                    </div>
+                    <div id="modalContainer10" class="modal-container" onclick="closeModal('modalContainer10', event)">
+                        <div id="board10" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/projects/01_story-style/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="window" id="window11" onclick="openModal('modalContainer11', event)">
+                        <img src="media/collect.png" alt="Project 3">
+                        <div class="title">journal index</div>
+                    </div>
+                    <div id="modalContainer11" class="modal-container" onclick="closeModal('modalContainer11', event)">
+                        <div id="board11" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/03_journal-index/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
                     <div class="view"></div>
-                    <div class="window" id="window8"></div>
+                    <div class="window"  id="window12" onclick="openModal('modalContainer12', event)">
+                        <img src="media/CS.png" alt="Project 3">
+                        <div class="title">class stylesheet</div>
+                    </div>
+                    <div id="modalContainer12" class="modal-container" onclick="closeModal('modalContainer12', event)">
+                        <div id="board12" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/projects/02_class-stylesheet/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
             </div>
                 
             </div>
+            <!-- BOTTOM -->
             <div class="shadow">
                 <div class="picblock2">
-                    <div class="window"><img src="media/grid.png" alt="Workshop 1"></div>
+                    <div class="window" id="window13" onclick="openModal('modalContainer13', event)">
+                        <img src="media/grid.png" alt="Workshop 1">
+                        <div class="title2">grids</div>
+                    </div>
+                    <div id="modalContainer13" class="modal-container" onclick="closeModal('modalContainer13', event)">
+                        <div id="board13" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/02_layout/grid.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
                     <div class="view"></div>
-                    <div class="window"><img src="media/kirby.png" alt="Workshop 2"></div>
-                    <div class="window"><img src="media/clock.png" alt="Workshop 3"></div>
+                    <div class="window" id="window14" onclick="openModal('modalContainer14', event)">
+                        <img src="media/kirby.png" alt="Workshop 2">
+                        <div class="title2">kirby</div>
+                    </div>
+                    <div id="modalContainer14" class="modal-container" onclick="closeModal('modalContainer14', event)">
+                        <div id="board14" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/projects/workshop8/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
+                    <div class="window" id="window15" onclick="openModal('modalContainer15', event)">
+                        <img src="media/clock.png" alt="Workshop 3">
+                        <div class="title2">clock</div>
+                    </div>
+                    <div id="modalContainer15" class="modal-container" onclick="closeModal('modalContainer15', event)">
+                        <div id="board15" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/projects/workshop9/clock-4-copy.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
                     <div class="view"></div>
-                    <div class="window"><img src="media/clock.png" alt="Workshop 3"></div>
+                    <div class="window" id="window16" onclick="openModal('modalContainer16', event)">
+                        <img src="media/API.png" alt="Workshop 3">
+                        <div class="title2">API</div>
+                    </div>
+                    <div id="modalContainer16" class="modal-container" onclick="closeModal('modalContainer16', event)">
+                        <div id="board16" class="board" onclick="event.stopPropagation()">
+                            <iframe src="lab/projects/workshop9/clock-4.html" frameborder="0" width="100%" height="100%"></iframe>
+                            <div class="open"></div>
+                        </div>
+                    </div>
             </div>
             </div>
         </div>

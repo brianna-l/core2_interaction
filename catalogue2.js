@@ -102,3 +102,16 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log("It's not time for noon mode");
   }
 });
+
+
+
+// Scroll
+// --------------------------
+
+window.addEventListener('wheel', function(event) {
+  if (event.deltaY !== 0) { 
+
+      event.preventDefault();
+      window.scrollBy(event.deltaY, 0);
+  }
+});

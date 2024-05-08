@@ -39,9 +39,14 @@ body.noon-mode .wall {
 body.noon-mode .shadow {
     background-image: repeating-linear-gradient(0deg, #d03333, #ffce0c 1px, #d03333 1px, #d03333 4px);
 }
-body.noon-mode .title, body.noon-mode .title2 {
+body.noon-mode .title {
     font-weight: 700;
     color: #d03333;
+}
+body.noon-mode .title2 {
+    font-weight: 700;
+    color: #ffffff;
+    mix-blend-mode: overlay;
 }
 body.noon-mode .time, body.noon-mode .sub {
     color: #ffce0c;
@@ -74,9 +79,14 @@ body.dark-mode .wall {
 body.dark-mode .shadow {
     background-image: repeating-linear-gradient(0deg, #333, #2b55e0 1px, #333 1px, #333 4px);
 }
-body.dark-mode .title, body.dark-mode .title2 {
+body.dark-mode .title {
     font-weight: 700;
     color: #333;
+}
+body.dark-mode .title2 {
+    font-weight: 700;
+    color: #ffffff;
+    mix-blend-mode: overlay;
 }
 body.dark-mode .time, body.dark-mode .sub {
     color: #2b55e0;
@@ -279,7 +289,7 @@ body.dark-mode .shadow .view {
 .house {
     position: relative;
     display: block;
-    width: 60%;
+    width: 1200px;
     height: 100%;
     margin-left: 30%;
     padding: 0;
@@ -321,7 +331,7 @@ body.dark-mode .shadow .view {
     align-items: center;
 }
 .window {
-    width: 45vw;
+    width: 200px;
     height: 100%;
     background-color: transparent;
     opacity: 1;
@@ -379,14 +389,14 @@ body.dark-mode .shadow .view {
 .modal-container {
     display: none;
     position: fixed;
-    z-index: 99;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     border: solid 1px beige;
+    overflow: auto;
     z-index: 9999;
   }
 .dark-mode .modal-container {
@@ -402,10 +412,57 @@ body.dark-mode .shadow .view {
     top: 5%;
     width: 85%;
     height: 90%;
-    background-color: #ffffff00;
+    background-color: #ffffffe7;
     overflow: hidden;
     border: 1px solid beige;
     border-radius: 25px;
+    overflow: auto;
+}
+.contentbox {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.contentbox h1 {
+    width: 90%;
+    font-size: 13vh;
+    color: #0b0b0b;
+    font-weight: 100;
+    margin: 0 5%;
+}
+.contentbox p {
+    width: 40%;
+    font-size: 2vh;
+    color: #0b0b0b;
+    font-weight: 300;
+    margin: 5% 6% 0;
+}
+.contentbox a {
+    width: 45%;
+    margin: 0;
+    font-size: 2vh;
+    color: #0b0b0b;
+    font-weight: 300;
+    align-self:flex-end;
+    transform: translateY(-20px) translateX(-10px);
+}
+#view1 {
+    width: 5%;
+    align-self: center;
+}
+video {
+    margin: 4% auto;
+    position: relative;
+}
+#box1 {
+    width: 50%;
+    height: 200px;
+    position: relative;
+    margin: 5% auto;
+    background-color: #587ffe;
 }
 
 .open {
@@ -419,6 +476,7 @@ body.dark-mode .shadow .view {
     background-image: repeating-linear-gradient(11deg, rgba(89, 89, 89, 0.176), rgba(62, 62, 62, 0.912) 1px, #2c2c2c 1px, transparent 4px);
     background-size: 8px;
     border-radius: 25px;
+    z-index: 1;
 }
 
 @keyframes slide {

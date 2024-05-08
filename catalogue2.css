@@ -457,6 +457,10 @@ video {
     margin: 4% auto;
     position: relative;
 }
+.contentbox img {
+    margin: 4% auto;
+    position: relative;
+}
 #box1 {
     width: 50%;
     height: 200px;

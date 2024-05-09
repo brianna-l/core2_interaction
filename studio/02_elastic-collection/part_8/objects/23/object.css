@@ -103,11 +103,11 @@ article div {
     position: fixed;
     right: 5%;
     top: 5%;
-    width: 62%;
+    width: 50%;
     height: 90%;
     background-image: url(/studio/02_elastic-collection/media/23-.png);
     background-size:cover;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     transition: all 0.5s ease;
     cursor:help;

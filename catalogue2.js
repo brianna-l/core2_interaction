@@ -45,7 +45,6 @@ setInterval(() => {
 var hoursElement = document.querySelector('.Hours');
 var minutesElement = document.querySelector('.Minutes');
 var secondsElement = document.querySelector('.Seconds');
-console.log(hoursElement, minutesElement, secondsElement);
 
 // Every Second
 setInterval(() => {

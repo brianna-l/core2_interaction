@@ -460,6 +460,7 @@ video {
 .contentbox img {
     margin: 4% auto;
     position: relative;
+    border: 0.5px solid #0b0b0b;
 }
 #box1 {
     width: 50%;

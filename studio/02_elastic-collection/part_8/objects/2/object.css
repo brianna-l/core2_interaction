@@ -105,6 +105,7 @@ article div {
     top: 5%;
     width: 60%;
     height: 90%;
+    border-radius: 50px;
     background-image: url(/studio/02_elastic-collection/media/2-.png);
     background-color: #fbfbfb;
     background-size: cover;
